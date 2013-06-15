@@ -38,7 +38,7 @@ public class PatternMatcherTest {
                 builder = new StringBuilder();
         for (Component c : components) {
             builder.append(
-                    c.isVarRef() ? "ref=" : "literal=");
+                    c.isPattern() ? "ref=" : "literal=");
             builder.append(c.getPayLoad());
             builder.append(" ");
         }
