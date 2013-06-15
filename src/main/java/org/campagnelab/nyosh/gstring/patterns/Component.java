@@ -7,7 +7,7 @@ package org.campagnelab.nyosh.gstring.patterns;
  */
 public class Component {
 
-    private boolean isVarRef;
+    private boolean isPattern;
     private String payLoad;
 
     public String getPayLoad() {
@@ -17,20 +17,20 @@ public class Component {
     public static Component createVarRef(String variableName) {
         Component c = new Component();
         c.payLoad = variableName;
-        c.isVarRef = true;
+        c.isPattern = true;
         return c;
     }
 
     public static Component createLiteral(String literal) {
         Component c = new Component();
         c.payLoad = literal;
-        c.isVarRef = false;
+        c.isPattern = false;
         return c;
 
     }
 
-    public boolean isVarRef() {
+    public boolean isPattern() {
 
-        return isVarRef;
+        return isPattern;
     }
 }
