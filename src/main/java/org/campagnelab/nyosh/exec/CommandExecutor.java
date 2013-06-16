@@ -2,6 +2,7 @@ package org.campagnelab.nyosh.exec;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * @author Fabien Campagne
@@ -9,6 +10,8 @@ import java.io.OutputStream;
  *         Time: 6:32 PM
  */
 public abstract class CommandExecutor {
+    protected final OutputConsumer stdErrConsumer;
+    protected final OutputConsumer stdOutConsumer;
     protected String command;
     private boolean needsForwardPipe;
     private boolean needsForwardErrPipe;
@@ -16,26 +19,55 @@ public abstract class CommandExecutor {
     protected CommandExecutor previous;
     private boolean needPipeBackward;
     private OutputStream outputStream;
-    private CmdErrorHandler errorHandler=new CmdErrorHandler();
+    private CmdErrorHandler errorHandler = new CmdErrorHandler();
     protected boolean earlyStop;
     private InputStream inputStreamForStdErr;
 
-    public CommandExecutor(String command, boolean needsForwardPipe, boolean needsForwardErrPipe) {
+    public CommandExecutor(String command, boolean needsForwardPipe, boolean needsForwardErrPipe,
+                           OutputConsumer stdOutConsumer, OutputConsumer stdErrConsumer) {
         this.command = command;
         this.needsForwardPipe = needsForwardPipe;
         this.needsForwardErrPipe = needsForwardErrPipe;
+        this.stdOutConsumer = stdOutConsumer;
+        this.stdErrConsumer = stdErrConsumer;
     }
 
     private boolean needPipeOutBackward;
     private boolean needPipeErrBackward;
+    protected CountDownLatch countDownCloseOutput;
 
     protected void makePipes(CommandExecutor previous, OutputStream outputStream) {
+
         if (needPipeOutBackward) {
-            new Thread(new SyncPipe(previous.getInputStreamForStdOut(), outputStream)).start();
+            final SyncPipe syncPipe = new SyncPipe(previous.getInputStreamForStdOut(), outputStream);
+            syncPipe.setDebug(command);
+            syncPipe.setCloseOutputCountDown(countDownCloseOutput);
+            new Thread(syncPipe).start();
         }
         if (needPipeErrBackward) {
-            new Thread(new SyncPipe(previous.getInputStreamForStdErr(), outputStream)).start();
+            final SyncPipe syncPipe = new SyncPipe(previous.getInputStreamForStdErr(), outputStream);
+            syncPipe.setDebug(command);
+            syncPipe.setCloseOutputCountDown(countDownCloseOutput);
+            new Thread(syncPipe).start();
         }
+
+    }
+
+    protected void setupCountDown() {
+        int countDownCount = 0;
+               if( stdOutConsumer!=null) {
+                   countDownCount++;
+               }
+               if( stdErrConsumer!=null) {
+                           countDownCount++;
+                       }
+               if (needPipeOutBackward) {
+                   countDownCount++;
+               }
+               if (needPipeErrBackward) {
+                   countDownCount++;
+               }
+               countDownCloseOutput = new CountDownLatch(countDownCount);
     }
 
     /**
@@ -50,11 +82,11 @@ public abstract class CommandExecutor {
      */
     public void prepare(CommandExecutor previousExecutor) {
         previous = previousExecutor;
-        if (previousExecutor!=null && previousExecutor.needPipeForward()) {
+        if (previousExecutor != null && previousExecutor.needPipeForward()) {
             needPipeBackward = true;
             needPipeOutBackward = true;
         }
-        if (previousExecutor!=null && previousExecutor.needPipeErrForward()) {
+        if (previousExecutor != null && previousExecutor.needPipeErrForward()) {
 
             needPipeErrBackward = true;
         }
