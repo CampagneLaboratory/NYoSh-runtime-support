@@ -1,15 +1,14 @@
 package org.campagnelab.nyosh.exec;
 
-import java.io.InputStream;
-
 /**
  * @author Fabien Campagne
  *         Date: 6/15/13
  *         Time: 6:47 PM
  */
 public class ThreadExecutor extends SequentialStepExecutor implements Runnable {
-    public ThreadExecutor(String command, boolean needsForwardPipe, boolean needsForwardErrPipe) {
-        super(command,  needsForwardPipe,  needsForwardErrPipe);
+    public ThreadExecutor(String command, boolean needsForwardPipe, boolean needsForwardErrPipe,
+                          OutputConsumer stdOutConsumer, OutputConsumer stdErrConsumer) {
+        super(command, needsForwardPipe, needsForwardErrPipe, stdOutConsumer, stdErrConsumer);
     }
 
     @Override

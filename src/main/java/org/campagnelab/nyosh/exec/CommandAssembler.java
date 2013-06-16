@@ -28,6 +28,8 @@ public class CommandAssembler {
     private List<CommandOp> commandList = new ArrayList<CommandOp>();
     private String currentCommand = null;
     private String currentOp = null;
+    private OutputConsumer currentStdOutConsumer;
+    private OutputConsumer currentStdErrConsumer;
 
     public void appendCommand(String cmd) {
         assert currentCommand == null : "Two commands cannot follow one another without a separating operator.";
@@ -38,9 +40,11 @@ public class CommandAssembler {
 
     private void push() {
         if (currentCommand != null && currentOp != null) {
-            commandList.add(new CommandOp(currentCommand, currentOp));
+            commandList.add(new CommandOp(currentCommand, currentOp, currentStdOutConsumer, currentStdErrConsumer));
             currentCommand = null;
             currentOp = null;
+            currentStdErrConsumer=null;
+            currentStdOutConsumer=null;
         }
     }
 
@@ -56,13 +60,18 @@ public class CommandAssembler {
         CommandExecutionPlan result = new CommandExecutionPlan();
         for (CommandOp op : commandList) {
 
-            CommandExecutor executor = op.isSequential() ? new SequentialStepExecutor(op.command, op.needsForwardPipe(),
-                    op.needForwardErrPipe()) :
-                    new ThreadExecutor(op.command,
+            CommandExecutor executor = op.isSequential() ? new SequentialStepExecutor(op.getCommand(),
+                    op.needsForwardPipe(),
+                    op.needForwardErrPipe(),
+                    op.getStdOutConsumer(),
+                    op.getStdErrConsumer()) :
+                    new ThreadExecutor(op.getCommand(),
                             op.needsForwardPipe(),
-                            op.needForwardErrPipe());
+                            op.needForwardErrPipe(),
+                            op.getStdOutConsumer(),
+                            op.getStdErrConsumer());
 
-            if ("||".equals(op.operator)) {
+            if (op.operatorIsAndList()) {
                 // the || operator consider exitCode!=0 as success.
                 executor.setErrorHandler(new CmdErrorHandler() {
                     @Override
@@ -72,7 +81,7 @@ public class CommandAssembler {
                 });
 
             }
-            if (";".equals(op.operator)) {
+            if (op.operatorIsSemicolon()) {
                 // the ; operator does not check exit code between commands.
                 executor.setErrorHandler(new CmdErrorHandler() {
                     @Override
@@ -89,7 +98,27 @@ public class CommandAssembler {
     }
 
     public void finishAssembly() {
-        if (currentOp == null) currentOp = ";";
+        if (currentOp == null) currentOp = "&&";
         push();
+    }
+
+    /**
+     * Install a consumer on standard output of the last command. Note that you cannot install a consumer
+     * on a command whose output is piped to the next command.
+     *
+     * @param outputConsumer A consumer that will process stdout of the last command.
+     */
+    public void consumeStandardOutput(OutputConsumer outputConsumer) {
+        currentStdOutConsumer = outputConsumer;
+    }
+
+    /**
+     * Install a consumer on standard error of the last command. Note that you cannot install a consumer
+     * on a command whose output is piped to the next command.
+     *
+     * @param outputConsumer A consumer that will process stderr of the last command.
+     */
+    public void consumeStandardError(OutputConsumer outputConsumer) {
+        currentStdErrConsumer = outputConsumer;
     }
 }

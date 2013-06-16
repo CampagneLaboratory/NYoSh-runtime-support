@@ -2,6 +2,11 @@ package org.campagnelab.nyosh.exec;
 
 import org.junit.Test;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
@@ -81,13 +86,13 @@ public class CommandAssemblerTest {
 
 
     @Test
-       public void testSemiListCommand() throws Exception {
-           CommandAssembler assembler = new CommandAssembler();
-           assembler.appendCommand("test-data/script-fail.sh");
-           assembler.appendOperator(";");
-           assembler.appendCommand("test-data/script-success.sh");
-           assertEquals(0, assembler.getCommandExecutionPlan().run());
-       }
+    public void testSemiListCommand() throws Exception {
+        CommandAssembler assembler = new CommandAssembler();
+        assembler.appendCommand("test-data/script-fail.sh");
+        assembler.appendOperator(";");
+        assembler.appendCommand("test-data/script-success.sh");
+        assertEquals(0, assembler.getCommandExecutionPlan().run());
+    }
 
     @Test
     public void testAndListCommand3() throws Exception {
@@ -130,4 +135,29 @@ public class CommandAssemblerTest {
 
     }
 
+    @Test
+    public void testConsumeOutput() throws Exception {
+        CommandAssembler assembler = new CommandAssembler();
+        assembler.appendCommand("ls -ltr");
+        assembler.appendOperator(";");
+        assembler.appendCommand("echo end");
+        final StringBuffer output = new StringBuffer();
+        assembler.consumeStandardOutput(new OutputConsumer() {
+
+            public void consume(InputStream inputStream) {
+                BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+                String line = "";
+                try {
+                    while ((line = br.readLine()) != null) {
+                        output.append(line);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        assembler.finishAssembly();
+        assertEquals(0, assembler.getCommandExecutionPlan().run());
+        assertEquals("end", output.toString());
+    }
 }

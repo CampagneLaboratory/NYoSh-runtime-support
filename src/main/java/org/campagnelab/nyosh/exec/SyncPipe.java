@@ -1,6 +1,7 @@
 package org.campagnelab.nyosh.exec;
 
 import java.io.*;
+import java.util.concurrent.CountDownLatch;
 
 
 /**
@@ -12,52 +13,63 @@ import java.io.*;
  */
 
 public class SyncPipe implements Runnable {
-    private final boolean quiet;
+
+
+    private CountDownLatch closeOutputCountDown;
 
     public SyncPipe(InputStream istrm, OutputStream ostrm) {
-        this(false, istrm, ostrm);
+
+        istrm_ = new BufferedInputStream(istrm, 10000);
+        ostrm_ = new BufferedOutputStream(ostrm, 10000);
+
     }
 
-    public SyncPipe(boolean quiet, InputStream istrm, OutputStream ostrm) {
-        this.quiet = quiet;
-        istrm_ = new BufferedInputStream(istrm);
-        ostrm_ = new BufferedOutputStream(ostrm);
+    private String debug;
 
+    public void setDebug(String debug) {
+        this.debug = debug;
     }
 
     public void run() {
         try {
             final byte[] buffer = new byte[1024];
+            while (istrm_.available() > 0) {
+                for (int length = 0; (length = istrm_.read(buffer)) != -1; ) {
 
-            for (int length = 0; (length = istrm_.read(buffer)) != -1; ) {
-                if (!quiet) {
                     ostrm_.write(buffer, 0, length);
                 }
-            }
-            if (!quiet) {
                 ostrm_.flush();
-               // Thread.sleep(1000);
             }
+
         } catch (java.io.IOException e) {
-            System.err.println("e:" + e);
+            //if (!e.getMessage().equals("Stream closed")) {
+                System.err.println("e:" + e);
+            //}
         } catch (Exception e) {
             throw new RuntimeException(e);
         } finally {
-          // close the output so the next process knows processing needs to finish..
-                  try {
+            // indicate that the output can be closed so the next process knows processing needs to finish..
+            if (closeOutputCountDown != null) {
+                closeOutputCountDown.countDown();
+                if (closeOutputCountDown.getCount() == 0) {
+                    // close immediately if we reached 0:
+                    try {
+                        ostrm_.close();
+                    } catch (IOException e) {
 
-                      ostrm_.close();
-                  } catch (IOException e) {
-
-                  }
+                    }
+                }
+            }
         }
     }
 
-    @Override
-    protected void finalize() throws Throwable {
-
-    }
 
     private final BufferedOutputStream ostrm_;
     private final BufferedInputStream istrm_;
+
+    public void setCloseOutputCountDown(CountDownLatch closeOutputCountDown) {
+        this.closeOutputCountDown = closeOutputCountDown;
+    }
+
+
 }

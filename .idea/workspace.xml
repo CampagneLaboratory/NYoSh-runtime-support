@@ -6,36 +6,46 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6906b0e-f281-49a6-a4f8-112b500183fd" name="Default" comment="">
+    <list default="true" id="f6906b0e-f281-49a6-a4f8-112b500183fd" name="Default" comment="Improve closing of output streams.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerRunnable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ThreadExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ThreadExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-data/script-echo-error.sh" afterPath="$PROJECT_DIR$/test-data/script-echo-error.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GStringPatternMatcher.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Matcher.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371085727979" ignored="false" />
     <file path="/Component.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315297421" ignored="false" />
-    <file path="/fragment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371392606209" ignored="false" />
+    <file path="/fragment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371397866566" ignored="false" />
     <file path="/PatternMatcher.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315135084" ignored="false" />
     <file path="/PatternMatcherTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315667655" ignored="false" />
-    <file path="/Dummy.txt" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371397481807" ignored="false" />
+    <file path="/Dummy.txt" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371403024026" ignored="false" />
     <file path="/Bash" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315445862" ignored="false" />
     <file path="/pom.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371316129978" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/campagnelab/org.campagnelab.stepslogger/1.0.0-SNAPSHOT/org.campagnelab.stepslogger-1.0.0-SNAPSHOT-sources.jar!/org/campagnelab/stepslogger/StepsLogger.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315776783" ignored="false" />
-    <file path="/CommandAssembler.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371397716041" ignored="false" />
+    <file path="/CommandAssembler.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371399876894" ignored="false" />
     <file path="/CommandExecutionPlan.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371395134564" ignored="false" />
     <file path="/a.dummy" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371335049297" ignored="false" />
-    <file path="/CommandOp.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371339225267" ignored="false" />
-    <file path="/CommandExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371339864317" ignored="false" />
-    <file path="/SequentialStepExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371394860845" ignored="false" />
-    <file path="/ThreadExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371392785392" ignored="false" />
-    <file path="/SyncPipe.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371396241089" ignored="false" />
+    <file path="/CommandOp.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371402110374" ignored="false" />
+    <file path="/CommandExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371401882187" ignored="false" />
+    <file path="/SequentialStepExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371402871401" ignored="false" />
+    <file path="/ThreadExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371398809642" ignored="false" />
+    <file path="/SyncPipe.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371403073181" ignored="false" />
     <file path="/CmdErrorHandler.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371337591265" ignored="false" />
-    <file path="/CommandAssemblerTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371397611868" ignored="false" />
+    <file path="/CommandAssemblerTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371400878030" ignored="false" />
     <file path="/script-fail.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371394524681" ignored="false" />
     <file path="/script-success.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371394195150" ignored="false" />
     <file path="/script-echo-hello.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371394224214" ignored="false" />
-    <file path="/script-echo-error.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371395701105" ignored="false" />
+    <file path="/script-echo-error.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371402700045" ignored="false" />
+    <file path="/OutputConsumer.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371398997323" ignored="false" />
+    <file path="/OutputConsumerRunnable.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371402956469" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +128,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" line="52" class="org.campagnelab.nyosh.exec.SequentialStepExecutor" package="org.campagnelab.nyosh.exec">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java" line="160" class="org.campagnelab.nyosh.exec.CommandAssemblerTest" package="org.campagnelab.nyosh.exec">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -133,7 +143,37 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutionPlan.java" line="30" class="org.campagnelab.nyosh.exec.CommandExecutionPlan" package="org.campagnelab.nyosh.exec">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" line="61" class="org.campagnelab.nyosh.exec.SequentialStepExecutor" package="org.campagnelab.nyosh.exec">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java" line="51" class="org.campagnelab.nyosh.exec.SyncPipe" package="org.campagnelab.nyosh.exec">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" line="47" class="org.campagnelab.nyosh.exec.CommandExecutor" package="org.campagnelab.nyosh.exec">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -161,20 +201,29 @@
       <file leaf-file-name="CommandAssembler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="75" selection-start="3097" selection-end="3097" vertical-scroll-proportion="0.0">
+            <state line="64" column="33" selection-start="2690" selection-end="2690" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1233#1244#0" expanded="true" />
-                <element signature="e#2154#2171#0" expanded="true" />
+                <element signature="e#2380#2397#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandAssemblerTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java">
+      <file leaf-file-name="CommandOp.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="29" selection-start="3497" selection-end="3497" vertical-scroll-proportion="0.5548961">
+            <state line="43" column="50" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatternMatcherTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/gstring/patterns/PatternMatcherTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="21" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,38 +231,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandExecutionPlan.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutionPlan.java">
+      <file leaf-file-name="CommandAssemblerTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="15" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script-fail.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-data/script-fail.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="4" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script-success.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-data/script-success.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="29" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script-echo-hello.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-data/script-echo-hello.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="36" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="63" column="27" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5732#6215#0" expanded="true" />
+                <element signature="e#6204#6205#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,25 +247,25 @@
       <file leaf-file-name="script-echo-error.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-data/script-echo-error.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
+            <state line="10" column="4" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SyncPipe.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java">
+      <file leaf-file-name="OutputConsumer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="19" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0">
+            <state line="9" column="55" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java">
+      <file leaf-file-name="OutputConsumerRunnable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="15" selection-start="2605" selection-end="2605" vertical-scroll-proportion="0.0">
+            <state line="27" column="16" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -247,10 +273,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequentialStepExecutor.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SyncPipe.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="57" selection-start="1449" selection-end="1482" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandExecutor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="45" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequentialStepExecutor.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="50" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+            <state line="61" column="0" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.33333334">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -276,22 +324,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/gstring/patterns/Component.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/gstring/patterns/PatternMatcherTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CmdErrorHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ThreadExecutor.java" />
         <option value="$PROJECT_DIR$/test-data/script-success.sh" />
         <option value="$PROJECT_DIR$/test-data/script-echo-hello.sh" />
         <option value="$PROJECT_DIR$/test-data/script-fail.sh" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutionPlan.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" />
-        <option value="$PROJECT_DIR$/test-data/script-echo-error.sh" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ThreadExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" />
+        <option value="$PROJECT_DIR$/test-data/script-echo-error.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerRunnable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java" />
       </list>
     </option>
   </component>
@@ -617,34 +665,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CommandAssemblerTest.testAndListCommand" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.campagnelab.nyosh.exec.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GStringPatternMatcher" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.campagnelab.nyosh.exec" />
-      <option name="MAIN_CLASS_NAME" value="org.campagnelab.nyosh.exec.CommandAssemblerTest" />
-      <option name="METHOD_NAME" value="testAndListCommand" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="CommandAssemblerTest.testAndListCommand2" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -704,6 +724,40 @@
       <envs />
       <patterns />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CommandAssemblerTest.testPipeStdErrCommand" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.campagnelab.nyosh.exec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GStringPatternMatcher" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.campagnelab.nyosh.exec" />
+      <option name="MAIN_CLASS_NAME" value="org.campagnelab.nyosh.exec.CommandAssemblerTest" />
+      <option name="METHOD_NAME" value="testPipeStdErrCommand" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -789,17 +843,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeCommand" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testAndListCommand" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testAndListCommand2" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeErrCommand" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testAndListCommand2" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeErrCommand" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeStdErrCommand" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeErrCommand" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testAndListCommand2" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testAndListCommand" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeCommand" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeStdErrCommand" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeCommand" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeErrCommand" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testAndListCommand2" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -856,7 +910,11 @@
       <created>1371397488220</created>
       <updated>1371397488220</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Support to assemble a command execution plan. Junit tests check the semantic of the usual BASH operators: ; &amp;&amp; || | |&amp;.">
+      <created>1371397779640</created>
+      <updated>1371397779640</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -884,7 +942,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.6701209" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298791" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298791" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -933,7 +991,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Support to assemble a command execution plan." />
+    <option name="LAST_COMMIT_MESSAGE" value="Support to assemble a command execution plan. Junit tests check the semantic of the usual BASH operators: ; &amp;&amp; || | |&amp;." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -951,6 +1009,7 @@
     <MESSAGE value="Add the ability to match operators as well as variables.&#10;Fix a problem where the last literal was not extracted." />
     <MESSAGE value="Draft support to assemble a command execution plan. Needs testing." />
     <MESSAGE value="Support to assemble a command execution plan." />
+    <MESSAGE value="Support to assemble a command execution plan. Junit tests check the semantic of the usual BASH operators: ; &amp;&amp; || | |&amp;." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -960,50 +1019,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="5" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Runnable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/UNIXProcess.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ThreadExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/gstring/patterns/PatternMatcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-data/script-success.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="29" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
@@ -1018,13 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-data/script-echo-error.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-data/script-echo-hello.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="36" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
@@ -1032,52 +1040,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ThreadExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="19" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0">
+        <state line="10" column="8" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutionPlan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+        <state line="30" column="0" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/gstring/patterns/PatternMatcherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+        <state line="40" column="21" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java">
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/ProcessBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="15" selection-start="2605" selection-end="2605" vertical-scroll-proportion="0.0">
+        <state line="6" column="19" selection-start="158" selection-end="158" vertical-scroll-proportion="0.32846716">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#1433#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="75" selection-start="3097" selection-end="3097" vertical-scroll-proportion="0.0">
+        <state line="64" column="33" selection-start="2690" selection-end="2690" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1233#1244#0" expanded="true" />
-            <element signature="e#2154#2171#0" expanded="true" />
+            <element signature="e#2380#2397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="50" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="45" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/script-echo-error.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="55" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="16" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="29" selection-start="3497" selection-end="3497" vertical-scroll-proportion="0.5548961">
+        <state line="63" column="27" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5732#6215#0" expanded="true" />
+            <element signature="e#6204#6205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="57" selection-start="1449" selection-end="1482" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.33333334">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

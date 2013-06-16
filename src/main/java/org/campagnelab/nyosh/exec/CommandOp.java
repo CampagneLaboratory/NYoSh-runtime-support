@@ -1,20 +1,32 @@
 package org.campagnelab.nyosh.exec;
 
 /**
+ * Models a command operation.
+ *
  * @author Fabien Campagne
  *         Date: 6/15/13
  *         Time: 6:24 PM
  */
 class CommandOp {
-    String command;
-    String operator;
-    boolean sequentialStep;
-    CommandExecutor executor;
+    private final OutputConsumer currentStdOutConsumer;
+    private final OutputConsumer currentStdErrConsumer;
+    private String command;
+    private String operator;
+    private boolean sequentialStep;
+    private CommandExecutor executor;
     private boolean sequential;
 
-    CommandOp(String command, String operator) {
+    CommandOp(String command, String operator, OutputConsumer currentStdOutConsumer, OutputConsumer currentStdErrConsumer) {
         this.command = command;
         this.operator = operator;
+        this.currentStdOutConsumer = currentStdOutConsumer;
+        this.currentStdErrConsumer = currentStdErrConsumer;
+        if ("|".equals("operator") && currentStdOutConsumer != null) {
+            throw new IllegalArgumentException("You cannot consume the output of a command that is also piped to the next command.");
+        }
+        if ("|&".equals("operator") && (currentStdOutConsumer != null || currentStdErrConsumer != null)) {
+            throw new IllegalArgumentException("You cannot consume the output or error of a command that is also piped to the next command.");
+        }
         if (";".equals(operator) || "&&".equals(operator) || "||".equals(operator)) {
             sequentialStep = true;
         }
@@ -29,10 +41,10 @@ class CommandOp {
     }
 
     /**
-     * Returns true if the command needs a pipe to the next step.
+     * Returns true if the command needs a stdout pipe to the next step.
      */
     public boolean needsForwardPipe() {
-        return "|".equals(operator);
+        return "|".equals(operator) ||needForwardErrPipe();
     }
 
     /**
@@ -41,4 +53,30 @@ class CommandOp {
     public boolean needForwardErrPipe() {
         return "|&".equals(operator);
     }
+
+    public String getCommand() {
+        return command;
+    }
+
+    public String getOperator() {
+        return operator;
+    }
+
+    public boolean operatorIsPipe() {
+        return "|".equals(operator);
+    }
+    public boolean operatorIsSemicolon() {
+            return ";".equals(operator);
+        }
+    public boolean operatorIsAndList() {
+           return "||".equals(operator);
+       }
+
+
+    public OutputConsumer getStdOutConsumer() {
+        return currentStdOutConsumer;
+    }
+    public OutputConsumer getStdErrConsumer() {
+            return currentStdErrConsumer;
+        }
 }
