@@ -23,6 +23,12 @@ public abstract class CommandExecutor {
     protected boolean earlyStop;
     private InputStream inputStreamForStdErr;
 
+    public void setWorkingDirectory(String workingDirectory) {
+        this.workingDirectory = workingDirectory;
+    }
+
+    protected String workingDirectory;
+
     public CommandExecutor(String command, boolean needsForwardPipe, boolean needsForwardErrPipe,
                            OutputConsumer stdOutConsumer, OutputConsumer stdErrConsumer) {
         this.command = command;

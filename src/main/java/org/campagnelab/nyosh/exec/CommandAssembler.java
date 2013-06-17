@@ -30,17 +30,25 @@ public class CommandAssembler {
     private String currentOp = null;
     private OutputConsumer currentStdOutConsumer;
     private OutputConsumer currentStdErrConsumer;
+    private String workingDirectory;
+
+    public CommandAssembler() {
+        workingDirectory=System.getProperty("user.dir");
+    }
 
     public void appendCommand(String cmd) {
         assert currentCommand == null : "Two commands cannot follow one another without a separating operator.";
         push();
         currentCommand = cmd;
         currentOp = null;
+
     }
 
     private void push() {
         if (currentCommand != null && currentOp != null) {
-            commandList.add(new CommandOp(currentCommand, currentOp, currentStdOutConsumer, currentStdErrConsumer));
+            CommandOp commandOp = new CommandOp(currentCommand, currentOp, currentStdOutConsumer, currentStdErrConsumer);
+            commandOp.setWorkingDirectory(workingDirectory);
+            commandList.add(commandOp);
             currentCommand = null;
             currentOp = null;
             currentStdErrConsumer=null;
@@ -53,7 +61,9 @@ public class CommandAssembler {
         currentOp = operator;
         push();
     }
-
+    public void changeDirectory(String path) {
+        workingDirectory=path;
+    }
     public CommandExecutionPlan getCommandExecutionPlan() {
         finishAssembly();
         List<CommandExecutor> executors = new ArrayList<CommandExecutor>();
@@ -70,7 +80,7 @@ public class CommandAssembler {
                             op.needForwardErrPipe(),
                             op.getStdOutConsumer(),
                             op.getStdErrConsumer());
-
+            executor.setWorkingDirectory(op.getWorkingDirectory());
             if (op.operatorIsAndList()) {
                 // the || operator consider exitCode!=0 as success.
                 executor.setErrorHandler(new CmdErrorHandler() {

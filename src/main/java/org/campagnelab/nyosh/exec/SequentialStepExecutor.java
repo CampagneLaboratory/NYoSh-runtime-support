@@ -1,5 +1,6 @@
 package org.campagnelab.nyosh.exec;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -22,6 +23,7 @@ public class SequentialStepExecutor extends CommandExecutor {
 
     public SequentialStepExecutor(String command, boolean needsForwardPipe, boolean needsForwardErrPipe, OutputConsumer stdOutConsumer, OutputConsumer stdErrConsumer) {
         super(command, needsForwardPipe, needsForwardErrPipe, stdOutConsumer, stdErrConsumer);
+
     }
 
     @Override
@@ -29,7 +31,8 @@ public class SequentialStepExecutor extends CommandExecutor {
         Process p = null;
         try {
             //    System.out.println("Starting command: "+command);
-            p = Runtime.getRuntime().exec(command);
+            String[] envp = new String[0];
+            p = Runtime.getRuntime().exec(command, envp, new File(workingDirectory));
             setupCountDown();
             installConsumers(p);
             makePipes(previous, p.getOutputStream());
@@ -38,7 +41,7 @@ public class SequentialStepExecutor extends CommandExecutor {
             //   System.out.println("Waiting for "+command+"..");
             exitCode = p.waitFor();
             closeAllOutputs(p);
-            System.out.println("Command " + command + " finished with exit code: " + exitCode());
+            System.out.println("Command " + command + " finished with exit code: " + exitCode() +" in directory "+workingDirectory);
 
             if (!getErrorHandler().success(exitCode())) {
                 forceEarlyStop();
@@ -57,7 +60,9 @@ public class SequentialStepExecutor extends CommandExecutor {
 
     private void closeAllOutputs(Process p) {
         try {
-            countDownCloseOutput.await();
+          if (countDownCloseOutput!=null){
+              countDownCloseOutput.await();
+          }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

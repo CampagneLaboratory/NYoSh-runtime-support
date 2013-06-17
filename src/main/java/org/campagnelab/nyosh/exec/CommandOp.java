@@ -15,6 +15,10 @@ class CommandOp {
     private boolean sequentialStep;
     private CommandExecutor executor;
     private boolean sequential;
+    /**
+     * The working directory where the command should be executed.
+     */
+    private String workingDirectory;
 
     CommandOp(String command, String operator, OutputConsumer currentStdOutConsumer, OutputConsumer currentStdErrConsumer) {
         this.command = command;
@@ -79,4 +83,12 @@ class CommandOp {
     public OutputConsumer getStdErrConsumer() {
             return currentStdErrConsumer;
         }
+
+    public void setWorkingDirectory(String workingDirectory) {
+        this.workingDirectory = workingDirectory;
+    }
+
+    public String getWorkingDirectory() {
+        return workingDirectory;
+    }
 }

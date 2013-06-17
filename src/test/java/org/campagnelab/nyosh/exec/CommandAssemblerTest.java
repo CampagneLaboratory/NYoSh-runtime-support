@@ -136,6 +136,23 @@ public class CommandAssemblerTest {
     }
 
     @Test
+    public void testChangeDirectory() throws Exception {
+        String workingDir = System.getProperty("user.dir");
+        CommandAssembler assembler = new CommandAssembler();
+        assembler.changeDirectory("test-data");
+        assembler.appendCommand("./script-success.sh");
+        assembler.appendOperator("&&");
+        assembler.appendCommand("./script-success.sh");
+        assembler.appendOperator("&&");
+        assembler.changeDirectory(workingDir);
+        assembler.appendCommand("test-data/script-success.sh");
+        final CommandExecutionPlan executionPlan = assembler.getCommandExecutionPlan();
+        assertEquals(0, executionPlan.run());
+        assertTrue(executionPlan.executedCompletely());
+
+    }
+
+    @Test
     public void testConsumeOutput() throws Exception {
         CommandAssembler assembler = new CommandAssembler();
         assembler.appendCommand("ls -ltr");
