@@ -49,24 +49,22 @@ public class SyncPipe implements Runnable {
             throw new RuntimeException(e);
         } finally {
             // indicate that the output can be closed so the next process knows processing needs to finish..
-            if (closeOutputCountDown != null) {
-                closeOutputCountDown.countDown();
 
-                // close immediately if we reached 0:
-                try {
+            closeOutputCountDown.countDown();
 
-                    closeOutputCountDown.await();
-                    ostrm_.close();
+            // close immediately if we reached 0:
+            try {
 
-                } catch (IOException e) {
+                closeOutputCountDown.await();
+                ostrm_.close();
 
-                } catch (InterruptedException e) {
+            } catch (IOException e) {
+
+            } catch (InterruptedException e) {
 
 
-                }
             }
         }
-
     }
 
 

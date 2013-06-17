@@ -177,4 +177,28 @@ public class CommandAssemblerTest {
         assertEquals(0, assembler.getCommandExecutionPlan().run());
         assertEquals("end", output.toString());
     }
+
+    @Test
+    public void testConsumeOutput2() throws Exception {
+        CommandAssembler assembler = new CommandAssembler();
+        assembler.appendCommand("ls /bin");
+        assembler.appendOperator("|");
+        assembler.appendCommand("grep vcf ");
+        assembler.consumeStandardOutput(new OutputConsumer() {
+            public void consume(InputStream stream) {
+                BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+                try {
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        // replace this
+                        System.out.println("line: " + line);
+                    }
+                } catch (Exception e) {
+                    //  ignore all exceptions
+                }
+            }
+        });
+        assembler.finishAssembly();
+        assembler.getCommandExecutionPlan().run();
+    }
 }

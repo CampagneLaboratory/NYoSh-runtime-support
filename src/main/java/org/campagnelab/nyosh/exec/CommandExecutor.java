@@ -43,37 +43,43 @@ public abstract class CommandExecutor {
     protected CountDownLatch countDownCloseOutput;
 
     protected void makePipes(CommandExecutor previous, OutputStream outputStream) {
-
+        SyncPipe syncPipeOut = null;
+        SyncPipe syncPipeErr = null;
         if (needPipeOutBackward) {
-            final SyncPipe syncPipe = new SyncPipe(previous.getInputStreamForStdOut(), outputStream);
-            syncPipe.setDebug(command);
-            syncPipe.setCloseOutputCountDown(countDownCloseOutput);
-            new Thread(syncPipe).start();
+            syncPipeOut = new SyncPipe(previous.getInputStreamForStdOut(), outputStream);
+            syncPipeOut.setDebug(command);
+            syncPipeOut.setCloseOutputCountDown(countDownCloseOutput);
+
         }
         if (needPipeErrBackward) {
-            final SyncPipe syncPipe = new SyncPipe(previous.getInputStreamForStdErr(), outputStream);
-            syncPipe.setDebug(command);
-            syncPipe.setCloseOutputCountDown(countDownCloseOutput);
-            new Thread(syncPipe).start();
-        }
+            syncPipeErr = new SyncPipe(previous.getInputStreamForStdErr(), outputStream);
+            syncPipeErr.setDebug(command);
+            syncPipeErr.setCloseOutputCountDown(countDownCloseOutput);
 
+        }
+        if (needPipeOutBackward) {
+            new Thread(syncPipeOut).start();
+        }
+        if (needPipeErrBackward) {
+            new Thread(syncPipeErr).start();
+        }
     }
 
     protected void setupCountDown() {
         int countDownCount = 0;
-               if( stdOutConsumer!=null) {
-                   countDownCount++;
-               }
-               if( stdErrConsumer!=null) {
-                           countDownCount++;
-                       }
-               if (needPipeOutBackward) {
-                   countDownCount++;
-               }
-               if (needPipeErrBackward) {
-                   countDownCount++;
-               }
-               countDownCloseOutput = new CountDownLatch(countDownCount);
+        if (stdOutConsumer != null) {
+            countDownCount++;
+        }
+        if (stdErrConsumer != null) {
+            countDownCount++;
+        }
+        if (needsForwardErrPipe) {
+            countDownCount++;
+        }
+        if (needsForwardPipe) {
+            countDownCount++;
+        }
+        countDownCloseOutput = new CountDownLatch(countDownCount);
     }
 
     /**
