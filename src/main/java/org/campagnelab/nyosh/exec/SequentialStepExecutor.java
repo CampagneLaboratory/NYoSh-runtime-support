@@ -67,10 +67,10 @@ public class SequentialStepExecutor extends CommandExecutor {
             throw new RuntimeException(e);
         }
         try {
-            if (previous != null) {
+            if (previous != null && previous.getInputStreamForStdErr()!=null) {
                 previous.getInputStreamForStdErr().close();
             }
-            if (previous != null) {
+            if (previous != null &&  previous.getInputStreamForStdOut()!=null) {
                 previous.getInputStreamForStdOut().close();
             }
         } catch (IOException e) {
