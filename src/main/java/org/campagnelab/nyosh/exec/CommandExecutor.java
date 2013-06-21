@@ -95,6 +95,7 @@ public abstract class CommandExecutor {
     public void prepare(CommandExecutor previousExecutor) {
         previous = previousExecutor;
         if (previousExecutor != null && previousExecutor.needPipeForward()) {
+
             needPipeBackward = true;
             needPipeOutBackward = true;
         }

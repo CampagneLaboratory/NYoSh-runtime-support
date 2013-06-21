@@ -33,8 +33,10 @@ public class OutputConsumerRunnable implements Runnable {
                     countDownCloseOutput.await();
                 } catch (InterruptedException e) {
 
+                } finally {
+                    inputStream.close();
                 }
-                inputStream.close();
+
             } catch (IOException e) {
 
             }
