@@ -28,6 +28,9 @@
         <module name="GStringPatternMatcher" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="GStringPatternMatcher" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
