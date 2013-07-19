@@ -27,7 +27,7 @@ public class MapFileParser implements Parser {
             while (line != null) {
                 String[] tokens = line.split("=");
                 if (tokens.length == 2) {
-                    environment.addVariable(tokens[0], tokens[1]);
+                    environment.addVariable(tokens[0], tokens[1].trim().replaceAll("(^\")|(\"$)", ""));
                 }
                 line = reader.readLine();
             }
