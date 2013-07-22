@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="nyosh-runtime-support:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/nyosh_runtime_support_jar</output-path>
+    <root id="archive" name="GStringPatternMatcher.jar">
+      <element id="module-output" name="NYoSh-runtime-support" />
+    </root>
+  </artifact>
+</component>

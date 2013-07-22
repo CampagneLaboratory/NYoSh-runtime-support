@@ -6,8 +6,8 @@
         <artifactId>maven-parent</artifactId>
         <version>1.0.3</version>
     </parent>
-    <groupId>org.campagnelab.nyosh.gstring</groupId>
-    <artifactId>pattern-matcher</artifactId>
+    <groupId>org.campagnelab.nyosh</groupId>
+    <artifactId>nyosh-runtime-support</artifactId>
     <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
