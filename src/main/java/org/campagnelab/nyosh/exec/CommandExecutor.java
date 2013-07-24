@@ -1,7 +1,12 @@
 package org.campagnelab.nyosh.exec;
 
+import org.campagnelab.nyosh.environment.NYoShRuntimeEnvironment;
+
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -22,6 +27,10 @@ public abstract class CommandExecutor {
     private CmdErrorHandler errorHandler = new CmdErrorHandler();
     protected boolean earlyStop;
     private InputStream inputStreamForStdErr;
+    protected Map<String, String> environment = new HashMap<String, String>();
+    //variables added by default to the executor environment
+    private static String[] defaultEnvVariables = new String[]{"PATH","LD_LIBRARY_PATH"};
+
 
     public void setWorkingDirectory(String workingDirectory) {
         this.workingDirectory = workingDirectory;
@@ -153,4 +162,15 @@ public abstract class CommandExecutor {
     public void setInputStreamForStdErr(InputStream inputStreamForStdErr) {
         this.inputStreamForStdErr = inputStreamForStdErr;
     }
+
+    public void setEnvironment(Set<String> environment) {
+        NYoShRuntimeEnvironment nYoShEnvironment = NYoShRuntimeEnvironment.getEnvironment();
+        for (String variable : environment)
+            this.environment.put(variable, nYoShEnvironment.getVariableValue(variable));
+
+        for (String variable : defaultEnvVariables)
+            this.environment.put(variable, nYoShEnvironment.getVariableValue(variable));
+    }
+
+
 }

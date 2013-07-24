@@ -1,7 +1,9 @@
 package org.campagnelab.nyosh.exec;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Assemble a command execution plan with BASH semantics.
@@ -31,9 +33,18 @@ public class CommandAssembler {
     private OutputConsumer currentStdOutConsumer;
     private OutputConsumer currentStdErrConsumer;
     private String workingDirectory;
+    private Set<String> localEnvironment = new HashSet<String>();
 
     public CommandAssembler() {
         workingDirectory=System.getProperty("user.dir");
+    }
+
+    /**
+     * Sets the list of environment variables visible to commands
+     * @param localEnvironment
+     */
+    public void setLocalEnvironment(Set<String> localEnvironment) {
+        this.localEnvironment = localEnvironment;
     }
 
     public void appendCommand(String cmd) {
@@ -81,6 +92,7 @@ public class CommandAssembler {
                             op.getStdOutConsumer(),
                             op.getStdErrConsumer());
             executor.setWorkingDirectory(op.getWorkingDirectory());
+            executor.setEnvironment(this.localEnvironment);
             if (op.operatorIsAndList()) {
                 // the || operator consider exitCode!=0 as success.
                 executor.setErrorHandler(new CmdErrorHandler() {

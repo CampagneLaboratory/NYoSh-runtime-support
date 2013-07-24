@@ -3,6 +3,7 @@ package org.campagnelab.nyosh.exec;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Map;
 
 /**
  * Execute a Runtime command sequentially.
@@ -31,7 +32,12 @@ public class SequentialStepExecutor extends CommandExecutor {
         Process p = null;
         try {
             //    System.out.println("Starting command: "+command);
-            String[] envp = new String[0];
+            String[] envp = new String[this.environment.size()];
+            int i=0;
+            for (Map.Entry<String,String> variable : this.environment.entrySet()) {
+               System.out.println("Attaching environment var: " + String.format("%s=%s",variable.getKey(),variable.getValue()));
+               envp[i++] = String.format("%s=%s",variable.getKey(),variable.getValue());
+            }
             p = Runtime.getRuntime().exec(command, envp, new File(workingDirectory));
             setupCountDown();
             installConsumers(p);
