@@ -4,8 +4,8 @@ import org.campagnelab.nyosh.environment.NYoShRuntimeEnvironment;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Parser for files in which each row is in the format KEY=VALUE.
@@ -14,7 +14,7 @@ import java.util.List;
 public class MapFileParser implements Parser {
 
     /**
-     * Parses the file and populates the {@link org.campagnelab.nyosh.environment.NYoShRuntimeEnvironment}
+     * Parses the file and populates the {@link NYoShRuntimeEnvironment}
      *
      * @param file
      */
@@ -40,20 +40,19 @@ public class MapFileParser implements Parser {
 
     /**
      * Parses the file.
-     * //TODO: the implementation of this method will change when it will be integrated with the plugins-SDK
      * @param file
      * @return the list of variables found in the file.
      */
     @Override
-    public List<String> parseAtDesignTime(String file) {
-        List<String> returnedKeys = new ArrayList<String>();
+    public Map<String,String> parseAtDesignTime(String file) {
+        Map<String,String> returnedVariables = new HashMap<String, String>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = reader.readLine();
             while (line != null) {
                 String[] tokens = line.split("=");
                 if (tokens.length == 2) {
-                    returnedKeys.add(tokens[0]);
+                    returnedVariables.put(tokens[0], tokens[1]);
                 }
                 line = reader.readLine();
             }
@@ -62,8 +61,7 @@ public class MapFileParser implements Parser {
             System.err.println("Invalid source");
             e.printStackTrace();
         }
-
-        return returnedKeys;
+        return returnedVariables;
 
     }
 

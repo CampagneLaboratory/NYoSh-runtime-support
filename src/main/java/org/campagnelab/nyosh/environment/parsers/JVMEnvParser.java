@@ -3,6 +3,7 @@ package org.campagnelab.nyosh.environment.parsers;
 import org.campagnelab.nyosh.environment.NYoShRuntimeEnvironment;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -32,11 +33,11 @@ public class JVMEnvParser implements Parser {
      * @return the list of variables found in the Java environment plus the ones we know will be visible at runtime.
      */
     @Override
-    public List<String> parseAtDesignTime(String source) {
-        List<String> returnedKeys = new ArrayList<String>();
+    public Map<String,String> parseAtDesignTime(String source) {
+        Map<String,String> returnedVariables = new HashMap<String, String>();
         for (Map.Entry<String,String> entry : System.getenv().entrySet()) {
-            returnedKeys.add(entry.getKey());
+            returnedVariables.put(entry.getKey(),entry.getValue());
         }
-        return returnedKeys;
+        return returnedVariables;
     }
 }

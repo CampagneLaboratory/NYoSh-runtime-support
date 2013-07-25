@@ -32,7 +32,7 @@ public class MapFileParserTest {
     @Test
     public void testParseAtDesignTime() throws Exception {
         MapFileParser parser = new MapFileParser();
-        List<String> keys= parser.parseAtDesignTime(new File("test-data", "auto-options.sh").getAbsolutePath());
+        Map<String,String> keys= parser.parseAtDesignTime(new File("test-data", "auto-options.sh").getAbsolutePath());
         assertEquals(7, keys.size());
     }
 }

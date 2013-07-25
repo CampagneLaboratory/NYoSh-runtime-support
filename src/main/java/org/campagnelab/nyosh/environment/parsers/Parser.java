@@ -1,6 +1,6 @@
 package org.campagnelab.nyosh.environment.parsers;
 
-import java.util.List;
+import java.util.Map;
 
 /**
  * Interface for parsers of Environment Sources.
@@ -19,6 +19,6 @@ public interface Parser {
      * @param source
      * @return the list of variables found in the source.
      */
-    public List<String> parseAtDesignTime(String source);
+    public Map<String,String> parseAtDesignTime(String source);
 
 }
