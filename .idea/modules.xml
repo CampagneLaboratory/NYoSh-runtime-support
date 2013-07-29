@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NYoSh-runtime-support.iml" filepath="$PROJECT_DIR$/NYoSh-runtime-support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NYoSH-runtime-support.iml" filepath="$PROJECT_DIR$/NYoSH-runtime-support.iml" />
     </modules>
   </component>
 </project>

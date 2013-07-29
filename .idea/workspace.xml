@@ -7,30 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6906b0e-f281-49a6-a4f8-112b500183fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/JVMEnvParser.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/JVMEnvParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/MapFileParser.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/MapFileParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Parser.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Parser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerToString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NYoSH-runtime-support.iml" afterPath="$PROJECT_DIR$/NYoSH-runtime-support.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GStringPatternMatcher.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Matcher.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371085727979" ignored="false" />
     <file path="/Component.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315297421" ignored="false" />
-    <file path="/fragment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374692535852" ignored="false" />
+    <file path="/fragment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371854100224" ignored="false" />
     <file path="/PatternMatcher.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315135084" ignored="false" />
     <file path="/PatternMatcherTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315667655" ignored="false" />
-    <file path="/Dummy.txt" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374770308238" ignored="false" />
+    <file path="/Dummy.txt" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375134954298" ignored="false" />
     <file path="/Bash" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315445862" ignored="false" />
-    <file path="/pom.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374510408105" ignored="false" />
+    <file path="/pom.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371316129978" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/campagnelab/org.campagnelab.stepslogger/1.0.0-SNAPSHOT/org.campagnelab.stepslogger-1.0.0-SNAPSHOT-sources.jar!/org/campagnelab/stepslogger/StepsLogger.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315776783" ignored="false" />
-    <file path="/CommandAssembler.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374692610728" ignored="false" />
+    <file path="/CommandAssembler.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371487083316" ignored="false" />
     <file path="/CommandExecutionPlan.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371395134564" ignored="false" />
     <file path="/a.dummy" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371335049297" ignored="false" />
     <file path="/CommandOp.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371486689736" ignored="false" />
-    <file path="/CommandExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374695783144" ignored="false" />
-    <file path="/SequentialStepExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374692094989" ignored="false" />
+    <file path="/CommandExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371507588480" ignored="false" />
+    <file path="/SequentialStepExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371508437703" ignored="false" />
     <file path="/ThreadExecutor.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371504792835" ignored="false" />
     <file path="/SyncPipe.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371504651526" ignored="false" />
     <file path="/CmdErrorHandler.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371337591265" ignored="false" />
@@ -47,16 +45,7 @@
     <file path="$PROJECT_DIR$/../artifacts-2/target/generated-sources/org/campagnelab/gobyweb/artifacts/Artifacts.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371668877046" ignored="false" />
     <file path="/DefaultArgumentParser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371854098451" ignored="false" />
     <file path="/DefaultParsedArguments.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371854133593" ignored="false" />
-    <file path="/NYoShRuntimeEnviroment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374176426780" ignored="false" />
-    <file path="/Parser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374770497366" ignored="false" />
-    <file path="/MapFileParser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374771016211" ignored="false" />
-    <file path="/JVMEnvParser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374771092210" ignored="false" />
-    <file path="/MapFileParserTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374772047660" ignored="false" />
-    <file path="/auto-options.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374177488554" ignored="false" />
-    <file path="$PROJECT_DIR$/../gobyweb2-plugins/plugins/aligners/SAMPLE_ALIGNER_WITH_MPS/config.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374253295733" ignored="false" />
-    <file path="$PROJECT_DIR$/../gobyweb2-plugins/plugins/aligners/SAMPLE_ALIGNER_WITH_MPS/run_model.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374264040549" ignored="false" />
-    <file path="/ExecutionEnvironment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374613846673" ignored="false" />
-    <file path="/GobyWebParser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374787329365" ignored="false" />
+    <file path="/OutputConsumerToString.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375134807633" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +80,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="&#13;&#13;JAVA" />
-        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -108,11 +97,10 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="&#13;&#13;JAVA" />
-        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -123,102 +111,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CommandAssemblerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java">
+      <file leaf-file-name="OutputConsumer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
+            <state line="11" column="24" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NYoShRuntimeEnvironment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/NYoShRuntimeEnvironment.java">
+      <file leaf-file-name="OutputConsumerToString.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerToString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="51" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+            <state line="28" column="8" selection-start="715" selection-end="715" vertical-scroll-proportion="0.60653186">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandAssembler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="63" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequentialStepExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="118" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="117" selection-start="4178" selection-end="4178" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#967#983#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="39" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapFileParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/MapFileParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="32" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1483#1499#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JVMEnvParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/JVMEnvParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="46" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1114#1130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GobyWebParser.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="97" selection-start="550" selection-end="550" vertical-scroll-proportion="0.31906614">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#329#345#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapFileParserTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="68" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
+            <state line="10" column="18" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -242,62 +156,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/test-data/script-echo-error.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/PathPatternMatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ThreadExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SyncPipe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerRunnable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/IArgumentParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/IParsedArguments.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/DefaultArgumentParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/DefaultParsedArguments.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/environment/NYoShRuntimeEnviroment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/environment/NYoShRuntimeEnvironment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/NYoShRuntimeEnvironment.java" />
-        <option value="$PROJECT_DIR$/test-data/auto-options.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerToString.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ExecutionEnvironment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Parser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/JVMEnvParser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/MapFileParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="pattern-matcher" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="junit:junit:4.9" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependencyNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="pattern-matcher" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -317,6 +196,10 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Profiles" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
+        </PATH_ELEMENT>
       </PATH>
     </treeState>
   </component>
@@ -330,8 +213,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="2560" />
-    <option name="height" value="1330" />
+    <option name="width" value="1920" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -359,6 +242,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,213 +251,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test-data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parsers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parsers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NYoSh-runtime-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gstring-pattern-matcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -581,38 +267,31 @@
     <property name="recentsLimit" value="5" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="gstringpatternmatcher" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="project.structure.side.proportion" value="0.28505215" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.campagnelab.nyosh.environment.parsers" />
-      <recent name="org.campagnelab.nyosh.exec" />
-      <recent name="org.campagnelab.nyosh.gstring.patterns" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.campagnelab.nyosh.exec" />
+      <recent name="org.campagnelab.nyosh.gstring.patterns" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.campagnelab.nyosh.exec" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.campagnelab.nyosh.environment" />
-      <recent name="org.campagnelab.nyosh.exec.environment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/gstring/patterns" />
@@ -626,7 +305,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="NYoSh-runtime-support" />
+      <module name="GStringPatternMatcher" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.campagnelab.nyosh.exec" />
@@ -643,8 +322,149 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CommandAssemblerTest.testPipeStdErrCommand" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.campagnelab.nyosh.exec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GStringPatternMatcher" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.campagnelab.nyosh.exec" />
+      <option name="MAIN_CLASS_NAME" value="org.campagnelab.nyosh.exec.CommandAssemblerTest" />
+      <option name="METHOD_NAME" value="testPipeStdErrCommand" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CommandAssemblerTest.testChangeDirectory" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.campagnelab.nyosh.exec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GStringPatternMatcher" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.campagnelab.nyosh.exec" />
+      <option name="MAIN_CLASS_NAME" value="org.campagnelab.nyosh.exec.CommandAssemblerTest" />
+      <option name="METHOD_NAME" value="testChangeDirectory" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CommandAssemblerTest.testConsumeOutput2" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.campagnelab.nyosh.exec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GStringPatternMatcher" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.campagnelab.nyosh.exec" />
+      <option name="MAIN_CLASS_NAME" value="org.campagnelab.nyosh.exec.CommandAssemblerTest" />
+      <option name="METHOD_NAME" value="testConsumeOutput2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CommandAssemblerTest.testPipeCommand2" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.campagnelab.nyosh.exec.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GStringPatternMatcher" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.campagnelab.nyosh.exec" />
+      <option name="MAIN_CLASS_NAME" value="org.campagnelab.nyosh.exec.CommandAssemblerTest" />
+      <option name="METHOD_NAME" value="testPipeCommand2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -667,17 +487,6 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <module name="GStringPatternMatcher" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -737,12 +546,20 @@
       <patterns />
       <method />
     </configuration>
-    <list size="1">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeStdErrCommand" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testChangeDirectory" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testConsumeOutput2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeCommand2" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testConsumeOutput2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeStdErrCommand" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testPipeCommand2" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest.testChangeDirectory" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -819,78 +636,55 @@
       <created>1371659509409</created>
       <updated>1371659509409</updated>
     </task>
-    <task id="LOCAL-00012" summary="Add parsers and NYoSh runtime environment. Add a tester for MapFileParser.">
-      <created>1374178203214</created>
-      <updated>1374178203214</updated>
+    <task id="LOCAL-00012" summary="Add default argument parsers. Comment out |&amp; operator test. Currently deadlocks.">
+      <created>1371854254544</created>
+      <updated>1371854254544</updated>
     </task>
-    <task id="LOCAL-00013" summary="Trim beginning and ending double quotes from values loaded with MapFileParser.">
-      <created>1374264978217</created>
-      <updated>1374264978217</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Rename the project as nyosh-runtime-support.">
-      <created>1374510899337</created>
-      <updated>1374510899337</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Manage local environment within Executors.">
-      <created>1374696601963</created>
-      <updated>1374696601963</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2560" height="1330" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1920" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32898697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.671371" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39813858" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.671371" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3981855" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12768497" sideWeight="0.6782178" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35218784" sideWeight="0.6481855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2096261" sideWeight="0.6782178" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32178217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34044823" sideWeight="0.2358871" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16168623" sideWeight="0.67101306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32762095" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34044823" sideWeight="0.35080644" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3983488" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19959678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UsagesViewTool">
+    <version id="0.9997" />
+    <tabs />
+    <default_view_options>
+      <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+    </default_view_options>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -934,7 +728,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Manage local environment within Executors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add default argument parsers. Comment out |&amp; operator test. Currently deadlocks." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -957,11 +751,7 @@
     <MESSAGE value="Fix possible NPE." />
     <MESSAGE value="Add test that characterized a deadlock and fix." />
     <MESSAGE value="Add interface for ArgumentParser and minimal result type." />
-    <MESSAGE value="Add parsers and NYoSh runtime environment." />
-    <MESSAGE value="Add parsers and NYoSh runtime environment. Add a tester for MapFileParser." />
-    <MESSAGE value="Trim beginning and ending double quotes from values loaded with MapFileParser." />
-    <MESSAGE value="Rename the project as nyosh-runtime-support." />
-    <MESSAGE value="Manage local environment within Executors." />
+    <MESSAGE value="Add default argument parsers. Comment out |&amp; operator test. Currently deadlocks." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -975,124 +765,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/DefaultParsedArguments.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+        <state line="11" column="24" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutionPlan.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerToString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="26" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+        <state line="28" column="8" selection-start="715" selection-end="715" vertical-scroll-proportion="0.60653186">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandOp.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="23" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.0">
+        <state line="10" column="18" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Runtime.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="152" selection-end="159" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ThreadExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/Map.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="44" selection-start="590" selection-end="590" vertical-scroll-proportion="0.33194155" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/NYoShRuntimeEnvironment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="118" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="63" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="117" selection-start="4178" selection-end="4178" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#967#983#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="39" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/JVMEnvParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="46" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1114#1130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="68" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/MapFileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="32" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1483#1499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="97" selection-start="550" selection-end="550" vertical-scroll-proportion="0.31906614">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#329#345#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1102,12 +792,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>nyosh-runtime-support:jar</last-edited>
+          <last-edited>GStringPatternMatcher:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.28505215" />
-                <option value="0.5" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1119,7 +808,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.28505215" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1131,7 +820,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.28505215" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1143,7 +832,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.28505215" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1151,7 +840,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>NYoSh-runtime-support</last-edited>
+          <last-edited>GStringPatternMatcher</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1176,11 +865,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: junit:junit:4.9</last-edited>
+          <last-edited>Maven: junit:junit:3.8.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.28505215" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
