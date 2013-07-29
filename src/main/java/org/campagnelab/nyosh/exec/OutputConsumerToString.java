@@ -1,6 +1,7 @@
 package org.campagnelab.nyosh.exec;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
@@ -11,7 +12,7 @@ import java.io.InputStreamReader;
  *         Time: 5:51 PM
  */
 public class OutputConsumerToString implements OutputConsumer {
-    String value=null;
+    private String value=null;
     public void consume(InputStream stream) {
       BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
 
@@ -19,6 +20,12 @@ public class OutputConsumerToString implements OutputConsumer {
        value = reader.readLine();
       } catch (Exception e) {
         // ignore all exceptions
+      } finally {
+          try {
+              reader.close();
+          } catch (IOException e) {
+
+          }
       }
     }
 
