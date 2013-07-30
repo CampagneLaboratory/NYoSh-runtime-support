@@ -8,6 +8,7 @@ import org.junit.runners.JUnit4;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
+import java.util.SortedSet;
 
 
 import static junit.framework.Assert.assertEquals;
@@ -32,7 +33,7 @@ public class MapFileParserTest {
     @Test
     public void testParseAtDesignTime() throws Exception {
         MapFileParser parser = new MapFileParser();
-        Map<String,String> keys= parser.parseAtDesignTime(new File("test-data", "auto-options.sh").getAbsolutePath());
-        assertEquals(7, keys.size());
+        SortedSet<ScriptVariable> variables = parser.parseAtDesignTime(new File("test-data", "auto-options.sh").getAbsolutePath());
+        assertEquals(7, variables.size());
     }
 }

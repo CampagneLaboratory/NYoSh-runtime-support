@@ -6,6 +6,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  * Parser for files in which each row is in the format KEY=VALUE.
@@ -19,10 +21,10 @@ public class MapFileParser implements Parser {
      * @param file
      */
     @Override
-    public void parseAtRunTime(String file) {
+    public void parseAtRunTime(String ... file) {
         NYoShRuntimeEnvironment environment = NYoShRuntimeEnvironment.getEnvironment();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+            BufferedReader reader = new BufferedReader(new FileReader(file[0]));
             String line = reader.readLine();
             while (line != null) {
                 String[] tokens = line.split("=");
@@ -41,18 +43,18 @@ public class MapFileParser implements Parser {
     /**
      * Parses the file.
      * @param file
-     * @return the list of variables found in the file.
+     * @return the list of designTimeDefaults found in the file.
      */
     @Override
-    public Map<String,String> parseAtDesignTime(String file) {
-        Map<String,String> returnedVariables = new HashMap<String, String>();
+    public SortedSet<ScriptVariable> parseAtDesignTime(String ... file) {
+        SortedSet<ScriptVariable> returnedVariables = new TreeSet<ScriptVariable>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+            BufferedReader reader = new BufferedReader(new FileReader(file[0]));
             String line = reader.readLine();
             while (line != null) {
                 String[] tokens = line.split("=");
                 if (tokens.length == 2) {
-                    returnedVariables.put(tokens[0], tokens[1]);
+                    returnedVariables.add(new ScriptVariable(tokens[0], tokens[1], ScriptVariable.Kind.STRING));
                 }
                 line = reader.readLine();
             }

@@ -1,6 +1,7 @@
 package org.campagnelab.nyosh.environment.parsers;
 
 import java.util.Map;
+import java.util.SortedSet;
 
 /**
  * Interface for parsers of Environment Sources.
@@ -10,15 +11,15 @@ public interface Parser {
 
     /**
      * Parses the source and populates the {@link org.campagnelab.nyosh.environment.NYoShRuntimeEnvironment}
-     * @param source
+     * @param parameters actual parameters for the parsing (depend on the parser implementation)
      */
-    public void parseAtRunTime(String source);
+    public void parseAtRunTime(String ... parameters);
 
     /**
      * Parses the source.
-     * @param source
-     * @return the list of variables found in the source.
+     * @param parameters actual parameters for the parsing (depend on the parser implementation)
+     * @return the list of designTimeDefaults found in the source.
      */
-    public Map<String,String> parseAtDesignTime(String source);
+    public SortedSet<ScriptVariable> parseAtDesignTime(String ... parameters);
 
 }

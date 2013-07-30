@@ -2,10 +2,7 @@ package org.campagnelab.nyosh.environment.parsers;
 
 import org.campagnelab.nyosh.environment.NYoShRuntimeEnvironment;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Parser for the Java environment
@@ -19,7 +16,7 @@ public class JVMEnvParser implements Parser {
      * @param source not used
      */
     @Override
-    public void parseAtRunTime(String source) {
+    public void parseAtRunTime(String ... source) {
         NYoShRuntimeEnvironment environment = NYoShRuntimeEnvironment.getEnvironment();
         for (Map.Entry<String,String> entry : System.getenv().entrySet()) {
             environment.addVariable(entry.getKey(), entry.getValue());
@@ -30,13 +27,13 @@ public class JVMEnvParser implements Parser {
      * Parses the Java environment.
      *
      * @param source
-     * @return the list of variables found in the Java environment plus the ones we know will be visible at runtime.
+     * @return the list of designTimeDefaults found in the Java environment plus the ones we know will be visible at runtime.
      */
     @Override
-    public Map<String,String> parseAtDesignTime(String source) {
-        Map<String,String> returnedVariables = new HashMap<String, String>();
+    public SortedSet<ScriptVariable> parseAtDesignTime(String ... source) {
+        SortedSet<ScriptVariable> returnedVariables = new TreeSet<ScriptVariable>();
         for (Map.Entry<String,String> entry : System.getenv().entrySet()) {
-            returnedVariables.put(entry.getKey(),entry.getValue());
+            returnedVariables.add(new ScriptVariable(entry.getKey(), entry.getValue(), ScriptVariable.Kind.STRING));
         }
         return returnedVariables;
     }
