@@ -209,6 +209,21 @@ public class CommandAssemblerTest {
         assembler.getCommandExecutionPlan().run();
     }
 
+
+    @Test
+    public void testBashFragment() throws Exception {
+        CommandAssembler assembler = new CommandAssembler();
+        assembler.appendBashFragment("a=\"1\"; eval echo '${a}'\n");
+        OutputConsumerToString var = new OutputConsumerToString();
+        assembler.consumeStandardOutput(var);
+        assembler.finishAssembly();
+        CommandExecutionPlan commandExecutionPlan = assembler.getCommandExecutionPlan();
+        commandExecutionPlan.run();
+        assertTrue(commandExecutionPlan.executedCompletely());
+        assertEquals("1",var.getValue());
+
+    }
+
     @Test
     public void testRedirectToFile() throws Exception {
         CommandAssembler assembler = new CommandAssembler();
