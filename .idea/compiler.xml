@@ -26,11 +26,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="GStringPatternMatcher" />
+        <module name="NYoSh-runtime-support" />
         <module name="NYoSH-runtime-support" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="GStringPatternMatcher" target="1.6" />
+      <module name="NYoSh-runtime-support" target="1.6" />
       <module name="NYoSH-runtime-support" target="1.6" />
     </bytecodeTargetLevel>
   </component>
