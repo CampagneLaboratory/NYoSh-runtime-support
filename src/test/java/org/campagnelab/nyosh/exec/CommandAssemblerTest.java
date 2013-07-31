@@ -220,7 +220,7 @@ public class CommandAssemblerTest {
         CommandExecutionPlan commandExecutionPlan = assembler.getCommandExecutionPlan();
         commandExecutionPlan.run();
         assertTrue(commandExecutionPlan.executedCompletely());
-        assertEquals("1",var.getValue());
+        assertEquals("1", var.getValue());
 
     }
 
@@ -248,5 +248,37 @@ public class CommandAssemblerTest {
     public static void after() {
         new File("rest-results/redirect-to-file").delete();
 
+    }
+
+    @Test
+    public void testLastIndexOf() {
+        String text = "aaa\"b";
+
+        assertTrue(isValid("\\\""));
+        assertFalse(isValid("\\\"1\"; eval echo '${a}'  "));
+        assertFalse(isValid("aaaa\"b"));
+        assertTrue(isValid(""));
+        assertFalse(isValid("\""));
+       assertTrue(isValid("ad"));
+        assertFalse(isValid("ad\"\""));
+    }
+
+    private boolean isValid(String s) {
+        if (s.contains("\"")) {
+            int index = -1;
+            int lastIndex = -1;
+            do {
+                index = s.indexOf("\"", lastIndex);
+                if (index==-1) return true;
+                if (index == 0 || s.charAt(index - 1) != '\\') {
+
+                    return false;
+                }
+
+                lastIndex = index+1;
+            } while (lastIndex >= 0);
+
+        }
+        return true;
     }
 }
