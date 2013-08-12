@@ -1,5 +1,6 @@
 package org.campagnelab.nyosh.exec;
 
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 /**
@@ -9,11 +10,32 @@ import java.io.InputStream;
  *         Date: 6/16/13
  *         Time: 11:51 AM
  */
-public interface OutputConsumer {
+public abstract class OutputConsumer {
     /**
      * Consume is called with the input stream to consume.
      *
      * @param inputStream
      */
-    public void consume(InputStream inputStream);
+    public abstract void consume(InputStream inputStream);
+
+
+    private ExceptionHandler handler=null;
+
+    /**
+     * Set an implementation of exception handler.
+     *
+     * @param handler
+     */
+    public void setHandler(ExceptionHandler handler) {
+        this.handler = handler;
+    }
+
+    /**
+     * A handler method that delegates to the handler, if present.
+     */
+    protected void handleException(Exception e) {
+        if (handler != null) {
+            handler.handleException(e);
+        }
+    }
 }

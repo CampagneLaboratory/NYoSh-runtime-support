@@ -44,5 +44,11 @@
             <version>2.3-SNAPSHOT</version>
             <classifier>sdk</classifier>
         </dependency>
+        <dependency>
+        	<groupId>commons-io</groupId>
+        	<artifactId>commons-io</artifactId>
+        	<version>2.4</version>
+        </dependency>
+
     </dependencies>
 </project>

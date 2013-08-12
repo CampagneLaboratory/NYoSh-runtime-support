@@ -1,5 +1,8 @@
 package org.campagnelab.nyosh.exec;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -34,17 +37,40 @@ public class CommandAssembler {
     private OutputConsumer currentStdErrConsumer;
     private String workingDirectory;
     private Set<String> localEnvironment = new HashSet<String>();
+    private Set<File> tmpFiles = new HashSet<File>();
 
     public CommandAssembler() {
-        workingDirectory=System.getProperty("user.dir");
+        workingDirectory = System.getProperty("user.dir");
     }
 
     /**
      * Sets the list of environment variables visible to commands
+     *
      * @param localEnvironment
      */
     public void setLocalEnvironment(Set<String> localEnvironment) {
         this.localEnvironment = localEnvironment;
+    }
+
+    public void appendBashFragment(String bashScriptFragment) {
+        assert currentCommand == null : "Two commands cannot follow one another without a separating operator.";
+        push();
+        File tmpScriptFile = null;
+        try {
+            tmpScriptFile = File.createTempFile("bashScriptFragment", ".sh");
+            PrintWriter writer = new PrintWriter(tmpScriptFile);
+            writer.print(bashScriptFragment);
+            tmpScriptFile.setExecutable(true);
+            writer.flush();
+            writer.close();
+            tmpFiles.add(tmpScriptFile);
+
+        } catch (IOException e) {
+
+        }
+        currentCommand = tmpScriptFile.getAbsolutePath();
+        currentOp = null;
+
     }
 
     public void appendCommand(String cmd) {
@@ -62,8 +88,8 @@ public class CommandAssembler {
             commandList.add(commandOp);
             currentCommand = null;
             currentOp = null;
-            currentStdErrConsumer=null;
-            currentStdOutConsumer=null;
+            currentStdErrConsumer = null;
+            currentStdOutConsumer = null;
         }
     }
 
@@ -72,13 +98,16 @@ public class CommandAssembler {
         currentOp = operator;
         push();
     }
+
     public void changeDirectory(String path) {
-        workingDirectory=path;
+        workingDirectory = path;
     }
+
     public CommandExecutionPlan getCommandExecutionPlan() {
         finishAssembly();
         List<CommandExecutor> executors = new ArrayList<CommandExecutor>();
         CommandExecutionPlan result = new CommandExecutionPlan();
+        result.setTmpFiles(tmpFiles);
         for (CommandOp op : commandList) {
 
             CommandExecutor executor = op.isSequential() ? new SequentialStepExecutor(op.getCommand(),

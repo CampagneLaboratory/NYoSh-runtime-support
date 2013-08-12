@@ -1,11 +1,12 @@
 package org.campagnelab.nyosh.exec;
 
+import org.apache.commons.io.FileUtils;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
@@ -56,7 +57,7 @@ public class CommandAssemblerTest {
     }
 
 
-   // @Test
+    // @Test
     public void testPipeStdErrCommand() throws Exception {
         CommandAssembler assembler = new CommandAssembler();
         assembler.appendCommand("test-data/script-echo-error.sh");
@@ -206,5 +207,78 @@ public class CommandAssemblerTest {
         });
         assembler.finishAssembly();
         assembler.getCommandExecutionPlan().run();
+    }
+
+
+    @Test
+    public void testBashFragment() throws Exception {
+        CommandAssembler assembler = new CommandAssembler();
+        assembler.appendBashFragment("a=\"1\"; eval echo '${a}'\n");
+        OutputConsumerToString var = new OutputConsumerToString();
+        assembler.consumeStandardOutput(var);
+        assembler.finishAssembly();
+        CommandExecutionPlan commandExecutionPlan = assembler.getCommandExecutionPlan();
+        commandExecutionPlan.run();
+        assertTrue(commandExecutionPlan.executedCompletely());
+        assertEquals("1", var.getValue());
+
+    }
+
+    @Test
+    public void testRedirectToFile() throws Exception {
+        CommandAssembler assembler = new CommandAssembler();
+        assembler.appendCommand("ls -ltr");
+        assembler.appendOperator(";");
+        assembler.appendCommand("echo end");
+        final StringBuffer output = new StringBuffer();
+        String filename = "rest-results/redirect-to-file/out-1.txt";
+        assembler.consumeStandardOutput(new RedirectToFile(new File(filename)));
+        assembler.finishAssembly();
+        assertEquals(0, assembler.getCommandExecutionPlan().run());
+        List<String> lines = FileUtils.readLines(new File(filename));
+        assertEquals("end", lines.get(lines.size() - 1));
+    }
+
+    @BeforeClass
+    public static void before() {
+        new File("rest-results/redirect-to-file").mkdirs();
+    }
+
+    @AfterClass
+    public static void after() {
+        new File("rest-results/redirect-to-file").delete();
+
+    }
+
+    @Test
+    public void testLastIndexOf() {
+        String text = "aaa\"b";
+
+        assertTrue(isValid("\\\""));
+        assertFalse(isValid("\\\"1\"; eval echo '${a}'  "));
+        assertFalse(isValid("aaaa\"b"));
+        assertTrue(isValid(""));
+        assertFalse(isValid("\""));
+       assertTrue(isValid("ad"));
+        assertFalse(isValid("ad\"\""));
+    }
+
+    private boolean isValid(String s) {
+        if (s.contains("\"")) {
+            int index = -1;
+            int lastIndex = -1;
+            do {
+                index = s.indexOf("\"", lastIndex);
+                if (index==-1) return true;
+                if (index == 0 || s.charAt(index - 1) != '\\') {
+
+                    return false;
+                }
+
+                lastIndex = index+1;
+            } while (lastIndex >= 0);
+
+        }
+        return true;
     }
 }
