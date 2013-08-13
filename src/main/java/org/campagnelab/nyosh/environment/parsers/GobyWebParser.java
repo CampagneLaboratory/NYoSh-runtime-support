@@ -42,13 +42,15 @@ public class GobyWebParser implements Parser {
             return;
         }
         String jobDir = System.getenv().get("JOB_DIR");
+        //load constants.sh and auto-options.sh
+
     }
 
     /**
      * Parses the source.
      *
-     * @param pluginInfo id, type and plugins-tree of the plugin.
-     * @return the list of designTimeDefaults found in the source.
+     * @param pluginInfo id, type and plugins-root of the plugin.
+     * @return the list of variables visible to the plugin.
      */
     @Override
     public SortedSet<ScriptVariable> parseAtDesignTime(String ... pluginInfo) {

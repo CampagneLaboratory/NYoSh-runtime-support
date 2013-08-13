@@ -6,55 +6,173 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6906b0e-f281-49a6-a4f8-112b500183fd" name="Default" comment="Add dependency against the plugins-SDK.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__colt_colt_1_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_wildcard_wildcard_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_annotations_r03.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_base_r03.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_io_r03.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_3_4_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_martiansoftware_jsap_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__concurrent_concurrent_1_3_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__edu_cornell_med_icb_icb_stats_1_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__edu_cornell_med_icb_icb_util_1_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__it_unimi_dsi_dsiutils_2_0_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__it_unimi_dsi_fastutil_6_4_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_gobyweb_artifacts_2_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_gobyweb_filesets_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_gobyweb_icb_groovy_support_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_gobyweb_option_validation_language_2_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_gobyweb_plugins_sdk_2_3_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_gobyweb_serverside_dependencies_full_1_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_org_campagnelab_stepslogger_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_1_8_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_eclipse_batch_1_8_6_01.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_9_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_9_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_9_2_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NYoSH-runtime-support.iml" afterPath="$PROJECT_DIR$/NYoSH-runtime-support.iml" />
+    <list default="true" id="f6906b0e-f281-49a6-a4f8-112b500183fd" name="Default" comment="Merge no-sdk branch into master.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/artifact-manager.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/artifact-manager.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/BWA_GOBY_0.5.9.16.2/bwa-icb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/filesets.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/filesets.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/global_goby.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/global_goby.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBY_2_DEV/goby.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/icb-groovy-support.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/icb-groovy-support.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/IGVTOOLS_1_5_16/igvtools.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/lastal" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/lastdb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/lastex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/serverside-dependencies.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/serverside-dependencies.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ENSEMBL_ANNOTATIONS_1.0/Biomart.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/CONTAMINANT_EXTRACT/OutputFormatter.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/SPLICING_DIFF_EXP/PostProcess.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/SPLICING_DIFF_EXP/Process.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/ProcessSamples.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/ProcessSamples.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/QueueWriter.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/QueueWriter.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/TsvVcfToSqlite.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/TsvVcfToSqlite.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ILLUMINA_ADAPTERS/adapters.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/alignerConfig.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/alignmentAnalysisConf.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/SPLICING_DIFF_EXP/alignmentsToTags.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ANNOTATE_VCF/annotate_vcf.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/artifact-manager.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/artifact-manager.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/artifacts.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/artifacts.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/TABIX_0.2.6/bgzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/bisulfite_f.mat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/bisulfite_f.seed" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/bisulfite_r.mat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/bisulfite_r.seed" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/BASH_LIBRARY_1.0/calculateMD5.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/common.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/aligners/BWA_GOBY_ARTIFACT/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/CONTAMINANT_EXTRACT/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/SEQ_VAR_GOBY_METHYLATION_REGIONS/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/SPLICING_DIFF_EXP/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/BAM_ALIGNMENT/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/COMPACT_READS/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/COUNTS/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/GOBY_ALIGNMENT/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/GZ/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/LUCENE_INDEX/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/STATS/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/TAR_GZ/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/TSV/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/filesets/X_SQLITE3/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ANNOTATE_VCF/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/BASH_LIBRARY_1.0/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/BWA_GOBY_0.5.9.16.2/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/BWA_WITH_GOBY_ARTIFACT_0.5.9.16.5/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/DESEQ_1.8.3/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/DESEQ_SCRIPT/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/EDGE_R_2.6.12/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/EDGE_R_SCRIPT/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ENSEMBL_ANNOTATIONS_1.0/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ENSEMBL_API_70/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ENSEMBL_GENOMES_1.0/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/EXTRACT_NONMATCHED_2012.06.04/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/FAI_INDEXED_GENOMES_1.0/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/FETCH_URL_1.2/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBY_2_DEV/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBY_CPP_API/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GROOVY_2.0.6/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/IGVTOOLS_1_5_16/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ILLUMINA_ADAPTERS/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_287/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/MINIA_2013_1.4961/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/PATHOGEN_DATA/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/PROTOBUF_CPP/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/R_2.14.1/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/R_2.15.3/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/SAMTOOLS_0.1.18.1/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/SAM_JDK_1.84/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/SCALA/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/TABIX_0.2.6/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/TRINITY_2012.05.18/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/VARIANT_EFFECT_PREDICTOR_2.8/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/VCF_TOOLS_0.1.10/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/config.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/EDGE_R_SCRIPT/deAnalysisEdgeR.R" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/DESEQ_1.8.3/deseq-setup.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/EDGE_R_SCRIPT/edgeR-setup.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ENSEMBL_API_70/ensembl-api-setup.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/artifacts-config/env.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/executableIOSchema.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/FETCH_URL_1.2/fetch_url" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/FETCH_URL_1.2/fetch_url_pattern" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/fileSetConfig.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/DESEQ_SCRIPT/geneDESeqAnalysis.R" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBY_2_DEV/goby-script.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GROOVY_2.0.6/groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/IGVTOOLS_1_5_16/igvtools-script.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/BWA_WITH_GOBY_ARTIFACT_0.5.9.16.5/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/DESEQ_1.8.3/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/EDGE_R_2.6.12/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ENSEMBL_ANNOTATIONS_1.0/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ENSEMBL_API_70/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/ENSEMBL_GENOMES_1.0/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/FAI_INDEXED_GENOMES_1.0/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBY_CPP_API/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GROOVY_2.0.6/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_287/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/MINIA_2013_1.4961/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/PATHOGEN_DATA/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/PROTOBUF_CPP/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/R_2.15.3/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/SAMTOOLS_0.1.18.1/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/SAM_JDK_1.84/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/SCALA/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/TABIX_0.2.6/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/TRINITY_2012.05.18/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/VARIANT_EFFECT_PREDICTOR_2.8/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/VCF_TOOLS_0.1.10/install.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/last-map-probs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/last-merge-batches.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/scripts/last-reduce-alignments.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/scripts/last-remove-dominated.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/scripts/maf-sort.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/LAST_230/scripts/maf-swap.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/CONTAMINANT_EXTRACT/makePluginConstants.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/BASH_LIBRARY_1.0/maps_in_bash3.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/plugins.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE/queue-writer.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/GOBYWEB_SERVER_SIDE_2.2/queue-writer.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/resourceConfig.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/R_2.15.3/run-R" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/SAMTOOLS_0.1.18.1/samtools" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/SCALA/scala-script.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/EXTRACT_NONMATCHED_2012.06.04/script-extract-nonmatched.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/MINIA_2013_1.4961/script-minia.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/TRINITY_2012.05.18/script-trinity.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/aligners/BWA_GOBY_ARTIFACT/script.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/CONTAMINANT_EXTRACT/script.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/SEQ_VAR_GOBY_METHYLATION_REGIONS/script.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/analyses/SPLICING_DIFF_EXP/script.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/R_2.14.1/script_R.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/TABIX_0.2.6/tabix" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/schemas/taskConfig.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-data/plugins-root/plugins/resources/VARIANT_EFFECT_PREDICTOR_2.8/vep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GStringPatternMatcher.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Matcher.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371085727979" ignored="false" />
     <file path="/Component.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315297421" ignored="false" />
-    <file path="/fragment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375195455881" ignored="false" />
+    <file path="/fragment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376405675786" ignored="false" />
     <file path="/PatternMatcher.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315135084" ignored="false" />
     <file path="/PatternMatcherTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315667655" ignored="false" />
-    <file path="/Dummy.txt" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376333671918" ignored="false" />
+    <file path="/Dummy.txt" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376406715440" ignored="false" />
     <file path="/Bash" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315445862" ignored="false" />
     <file path="/pom.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375191336124" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/campagnelab/org.campagnelab.stepslogger/1.0.0-SNAPSHOT/org.campagnelab.stepslogger-1.0.0-SNAPSHOT-sources.jar!/org/campagnelab/stepslogger/StepsLogger.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315776783" ignored="false" />
@@ -89,7 +207,7 @@
     <file path="$PROJECT_DIR$/../gobyweb2-plugins/plugins/aligners/SAMPLE_ALIGNER_WITH_MPS/config.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374253295733" ignored="false" />
     <file path="$PROJECT_DIR$/../gobyweb2-plugins/plugins/aligners/SAMPLE_ALIGNER_WITH_MPS/run_model.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375212724870" ignored="false" />
     <file path="/ExecutionEnvironment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374613846673" ignored="false" />
-    <file path="/GobyWebParser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375199432719" ignored="false" />
+    <file path="/GobyWebParser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376406564217" ignored="false" />
     <file path="$PROJECT_DIR$/../plugins-git/config/log4j.properties" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375121317261" ignored="false" />
     <file path="$PROJECT_DIR$/../plugins-git/pom.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375126719607" ignored="false" />
     <file path="$PROJECT_DIR$/../plugins-git/src/main/resources/oge_job_script.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375124999633" ignored="false" />
@@ -114,7 +232,7 @@
     <file path="$PROJECT_DIR$/../plugins-git/src/test/groovy/org/campagnelab/gobyweb/clustergateway/submission/ClusterGatewaySimulatorTest.groovy" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375190774157" ignored="false" />
     <file path="/ClusterGatewaySimulatorTest.groovy" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375190773732" ignored="false" />
     <file path="/ScriptVariable.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375196743147" ignored="false" />
-    <file path="/GobyWebParserTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375195766552" ignored="false" />
+    <file path="/GobyWebParserTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376405929587" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +252,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -170,7 +289,6 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -193,7 +311,7 @@
       <file leaf-file-name="MapFileParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/MapFileParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="56" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
+            <state line="36" column="31" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -208,10 +326,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GobyWebParser.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GobyWebParser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="49" selection-start="2397" selection-end="2397" vertical-scroll-proportion="0.0">
+            <state line="59" column="0" selection-start="2518" selection-end="2518" vertical-scroll-proportion="0.3141593">
               <folding />
             </state>
           </provider>
@@ -220,10 +338,8 @@
       <file leaf-file-name="GobyWebParserTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="25" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="26" column="34" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -231,7 +347,7 @@
       <file leaf-file-name="CommandAssemblerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="76" selection-start="7071" selection-end="7071" vertical-scroll-proportion="0.0">
+            <state line="179" column="5" selection-start="7090" selection-end="7090" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -240,7 +356,7 @@
       <file leaf-file-name="OutputConsumerToString.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerToString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
+            <state line="13" column="3" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -255,10 +371,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="219" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.88188976">
+            <state line="35" column="36" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -267,7 +383,7 @@
       <file leaf-file-name="MapFileParserTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="58" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
+            <state line="33" column="50" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -299,14 +415,14 @@
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/MapFileParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/JVMEnvParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/ScriptVariable.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Parser.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java" />
       </list>
     </option>
   </component>
@@ -376,7 +492,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -391,8 +507,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,6 +535,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime-support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins-root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime-support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins-root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime-support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -473,6 +641,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parsers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime-support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -504,24 +698,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="exec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime-support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYoSh-runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parsers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="recentsLimit" value="5" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="gstringpatternmatcher" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -558,7 +780,7 @@
       <recent name="org.campagnelab.nyosh.exec.environment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GobyWebParserTest.testParseAtDesignTime">
+  <component name="RunManager" selected="JUnit.GobyWebParserTest">
     <configuration default="false" name="CommandAssemblerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -617,6 +839,40 @@
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GobyWebParserTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.campagnelab.nyosh.environment.parsers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="NYoSH-runtime-support" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.campagnelab.nyosh.environment.parsers" />
+      <option name="MAIN_CLASS_NAME" value="org.campagnelab.nyosh.environment.parsers.GobyWebParserTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -709,14 +965,16 @@
       <patterns />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.GobyWebParserTest.testParseAtDesignTime" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GobyWebParserTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GobyWebParserTest.testParseAtDesignTime" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GobyWebParserTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.GobyWebParserTest.testParseAtDesignTime" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CommandAssemblerTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -817,7 +1075,11 @@
       <created>1375191798605</created>
       <updated>1375191798605</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Merge no-sdk branch into master.">
+      <created>1376334384131</created>
+      <updated>1376334384131</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -841,27 +1103,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="22" width="2560" height="1330" extended-state="0" />
+    <frame x="6" y="22" width="2560" height="1330" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32920793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.671371" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39752066" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39752066" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940334" sideWeight="0.6707921" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1300716" sideWeight="0.6707921" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13086714" sideWeight="0.60247934" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2096261" sideWeight="0.6707921" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2096261" sideWeight="0.60247934" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32231405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34044823" sideWeight="0.2358871" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -869,7 +1132,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3983471" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -916,7 +1178,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dependency against the plugins-SDK." />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge no-sdk branch into master." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -946,6 +1208,7 @@
     <MESSAGE value="Manage local environment within Executors." />
     <MESSAGE value="Add GobyWebParser. Change the parsers behavior to return the values of loaded variables at design time." />
     <MESSAGE value="Add dependency against the plugins-SDK." />
+    <MESSAGE value="Merge no-sdk branch into master." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -986,21 +1249,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="58" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/plugins/2.3-SNAPSHOT/plugins-2.3-20130730.132802-13-sdk.jar!/org/campagnelab/gobyweb/clustergateway/submission/ClusterGatewaySimulator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.35502958" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/ScriptVariable.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="43" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+        <state line="179" column="5" selection-start="7090" selection-end="7090" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerToString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="3" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1012,9 +1282,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/ScriptVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="43" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/MapFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="56" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
+        <state line="36" column="31" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1026,39 +1303,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/MapFileParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="49" selection-start="2397" selection-end="2397" vertical-scroll-proportion="0.0">
+        <state line="33" column="50" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/exec/CommandAssemblerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="76" selection-start="7071" selection-end="7071" vertical-scroll-proportion="0.0">
+        <state line="26" column="34" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/OutputConsumerToString.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="219" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.88188976">
+        <state line="59" column="0" selection-start="2518" selection-end="2518" vertical-scroll-proportion="0.3141593">
           <folding />
         </state>
       </provider>

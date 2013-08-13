@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.io.File;
 import java.util.SortedSet;
 
 /**
@@ -22,7 +23,7 @@ public class GobyWebParserTest {
     @Test
     public void testParseAtDesignTime() throws Exception {
        GobyWebParser parser = new GobyWebParser();
-       SortedSet<ScriptVariable> variables = parser.parseAtDesignTime("TRINITY", "resources");
+       SortedSet<ScriptVariable> variables = parser.parseAtDesignTime("TRINITY", "resources",new File("test-data/plugins-root").getAbsolutePath());
        Assert.assertNotNull(variables);
 
     }
