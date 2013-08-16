@@ -25,6 +25,7 @@ public class GobyWebParserTest {
        GobyWebParser parser = new GobyWebParser();
        SortedSet<ScriptVariable> variables = parser.parseAtDesignTime("TRINITY", "resources",new File("test-data/plugins-root").getAbsolutePath());
        Assert.assertNotNull(variables);
+        for (ScriptVariable variable : variables) System.out.println(variable.name);
 
     }
 }

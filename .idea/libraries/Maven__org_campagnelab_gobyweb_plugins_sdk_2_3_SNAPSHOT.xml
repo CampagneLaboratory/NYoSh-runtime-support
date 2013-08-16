@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.campagnelab.gobyweb:plugins:sdk:2.3-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/plugins/2.3-SNAPSHOT/plugins-2.3-20130812.160621-24-sdk.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/plugins/2.3-SNAPSHOT/plugins-2.3-20130815.162414-28-sdk.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/plugins/2.3-SNAPSHOT/plugins-2.3-20130812.160621-24-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/plugins/2.3-SNAPSHOT/plugins-2.3-20130815.162414-28-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/plugins/2.3-SNAPSHOT/plugins-2.3-20130812.160621-24-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/plugins/2.3-SNAPSHOT/plugins-2.3-20130815.162414-28-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
