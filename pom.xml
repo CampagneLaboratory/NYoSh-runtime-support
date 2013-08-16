@@ -11,7 +11,7 @@
     <version>1.0.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>pattern-matcher</name>
+    <name>nyosh-runtime-support</name>
     <url>http://maven.apache.org</url>
     <build>
         <plugins>
@@ -26,14 +26,15 @@
             <version>2.5</version>
         </plugin>
         </plugins>
-        <resources>
+        <!--resources>
             <resource>
-                <directory>src/main/resources</directory>
+                <directory>src/main/java/org/campagnelab/nyosh/logging</directory>
                 <includes>
                     <include>nyosh-log4j.properties</include>
                 </includes>
+                <targetPath>org/campagnelab/nyosh/logging</targetPath>
             </resource>
-        </resources>
+        </resources-->
     </build>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

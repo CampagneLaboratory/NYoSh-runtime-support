@@ -4,7 +4,9 @@ import org.apache.log4j.Logger;
 import org.campagnelab.gobyweb.clustergateway.jobs.simulator.Option;
 import org.campagnelab.gobyweb.clustergateway.submission.ClusterGatewaySimulator;
 import org.campagnelab.nyosh.environment.NYoShRuntimeEnvironment;
+import org.campagnelab.nyosh.logging.Log4JInitializer;
 
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.SortedSet;
@@ -16,8 +18,8 @@ import java.util.TreeSet;
  */
 public class GobyWebParser implements Parser {
 
-    protected static final org.apache.log4j.Logger logger;
-    private static Map<String,String> designTimeDefaults = new HashMap<String, String>();
+    protected static Logger logger;
+    static Map<String,String> designTimeDefaults = new HashMap<String, String>();
 
     static {
         //static initialization of variable known to be used by GobyWeb on a cluster node
@@ -26,7 +28,7 @@ public class GobyWebParser implements Parser {
         designTimeDefaults.put("TMPDIR", System.getProperty("user.home") + "/plugins-SDK-cache");
         designTimeDefaults.put("SGE_O_WORKDIR", System.getProperty("user.home") + "/plugins-SDK-cache");
         Log4JInitializer.init();
-        logger= Logger.getLogger(GobyWebParser.class);
+        logger = Logger.getLogger(GobyWebParser.class);
     }
 
     /**
@@ -43,7 +45,6 @@ public class GobyWebParser implements Parser {
             environment.addVariable(variable.getKey(), System.getenv().get(variable.getKey()));
         if (! System.getenv().containsKey("JOB_DIR")){
             System.out.println("JOB_DIR is not defined in the current environment");
-            logger.warn("JOB_DIR is not defined in the current environment");
             return;
         }
         String jobDir = System.getenv().get("JOB_DIR");
@@ -61,13 +62,14 @@ public class GobyWebParser implements Parser {
     public SortedSet<ScriptVariable> parseAtDesignTime(String ... pluginInfo) {
         SortedSet<ScriptVariable> returnedVariables = new TreeSet<ScriptVariable>();
         try {
+
             if (pluginInfo.length !=3) {
                 System.err.println("Invalid number of parameters");
-                logger.debug(String.format("Invalid number of parameters %d",pluginInfo.length));
-                return returnedVariables;
+                throw new Exception(String.format("Invalid number of parameters %d", pluginInfo.length));
+                //return returnedVariables;
             }
-            System.out.println(String.format("Loading variables for script %s, type %s, from root %s",pluginInfo[0],pluginInfo[1],pluginInfo[2]));
-            logger.debug(String.format("Loading variables for script %s, type %s, from root %s",pluginInfo[0],pluginInfo[1],pluginInfo[2]));
+            logger.info(String.format("Loading variables for script %s, type %s, from root %s",pluginInfo[0],pluginInfo[1],pluginInfo[2]));
+            appendLogToFile(String.format("Loading variables for script %s, type %s, from root %s", pluginInfo[0], pluginInfo[1], pluginInfo[2]));
             //send a request to the plugin-sdk to simulate the job submission
             for (Option option : ClusterGatewaySimulator.process(prepareArguments(pluginInfo), false)) {
                 returnedVariables.add(ScriptVariable.fromOption(option));
@@ -75,10 +77,20 @@ public class GobyWebParser implements Parser {
             for (Map.Entry<String,String> defaultVar : designTimeDefaults.entrySet()) {
                 returnedVariables.add(new ScriptVariable(defaultVar.getKey(),defaultVar.getValue(), ScriptVariable.Kind.DIRECTORY));
             }
+            appendLogToFile("done");
         } catch (Exception e) {
             System.err.println("Unable to get the list of variables from the plugins-SDK");
-            logger.error("Unable to get the list of variables from the plugins-SDK", e);
+            appendLogToFile("Unable to get the list of variables from the plugins-SDK");
+            try {
+            File file = new File(System.getProperty("user.home") + "/nyosh-ex2.log");
+                if (!file.exists())
+                    file.createNewFile();
+                PrintStream p = new PrintStream(file);
+                e.printStackTrace(p);
+                p.close();
+            }catch (Exception e2) {e2.printStackTrace();}
         }
+
         return returnedVariables;
     }
 
@@ -91,6 +103,32 @@ public class GobyWebParser implements Parser {
            pluginInfo[1].equalsIgnoreCase("resources")?"--resource":"--job",
            pluginInfo[0]
         };
+    }
+
+    private static void appendLogToFile(String message)  {
+        try {
+            File file = new File(System.getProperty("user.home") + "/nyosh.log");
+            if (!file.exists())
+                 file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            BufferedWriter bw = new BufferedWriter(writer);
+            PrintWriter pw = new PrintWriter(bw);
+            pw.append(message);
+            pw.flush();
+            pw.close();
+        }catch (Exception e) {e.printStackTrace();}
+    }
+
+    private static void appendLogToFile(Exception e)  {
+        try {
+            File file = new File(System.getProperty("user.home") + "/nyosh.log");
+            if (!file.exists())
+                file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            PrintWriter pw = new PrintWriter(writer);
+            e.printStackTrace(pw);
+            pw.close();
+        }catch (Exception e2) {e2.printStackTrace();}
     }
 
 }

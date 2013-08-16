@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6906b0e-f281-49a6-a4f8-112b500183fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Log4JInitializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/nyosh-log4j.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/nyosh-log4j.properties" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Log4JInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/logging/Log4JInitializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_gobyweb_plugins_sdk_2_3_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_campagnelab_gobyweb_plugins_sdk_2_3_SNAPSHOT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NYoSH-runtime-support.iml" afterPath="$PROJECT_DIR$/NYoSH-runtime-support.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -21,12 +18,12 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Matcher.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371085727979" ignored="false" />
     <file path="/Component.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315297421" ignored="false" />
-    <file path="/fragment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376405675786" ignored="false" />
+    <file path="/fragment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376679359692" ignored="false" />
     <file path="/PatternMatcher.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315135084" ignored="false" />
     <file path="/PatternMatcherTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315667655" ignored="false" />
-    <file path="/Dummy.txt" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376660582449" ignored="false" />
+    <file path="/Dummy.txt" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376678568449" ignored="false" />
     <file path="/Bash" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315445862" ignored="false" />
-    <file path="/pom.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376591858875" ignored="false" />
+    <file path="/pom.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376685718032" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/campagnelab/org.campagnelab.stepslogger/1.0.0-SNAPSHOT/org.campagnelab.stepslogger-1.0.0-SNAPSHOT-sources.jar!/org/campagnelab/stepslogger/StepsLogger.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371315776783" ignored="false" />
     <file path="/CommandAssembler.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374692610728" ignored="false" />
     <file path="/CommandExecutionPlan.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1371395134564" ignored="false" />
@@ -59,7 +56,7 @@
     <file path="$PROJECT_DIR$/../gobyweb2-plugins/plugins/aligners/SAMPLE_ALIGNER_WITH_MPS/config.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374253295733" ignored="false" />
     <file path="$PROJECT_DIR$/../gobyweb2-plugins/plugins/aligners/SAMPLE_ALIGNER_WITH_MPS/run_model.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375212724870" ignored="false" />
     <file path="/ExecutionEnvironment.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1374613846673" ignored="false" />
-    <file path="/GobyWebParser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376660840104" ignored="false" />
+    <file path="/GobyWebParser.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376687337769" ignored="false" />
     <file path="$PROJECT_DIR$/../plugins-git/config/log4j.properties" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375121317261" ignored="false" />
     <file path="$PROJECT_DIR$/../plugins-git/pom.xml" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375126719607" ignored="false" />
     <file path="$PROJECT_DIR$/../plugins-git/src/main/resources/oge_job_script.sh" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375124999633" ignored="false" />
@@ -85,10 +82,11 @@
     <file path="/ClusterGatewaySimulatorTest.groovy" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375190773732" ignored="false" />
     <file path="/ScriptVariable.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1375196743147" ignored="false" />
     <file path="/GobyWebParserTest.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376593147575" ignored="false" />
-    <file path="/Log4JInitializer.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376660706232" ignored="false" />
+    <file path="/Log4JInitializer.java" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376684386693" ignored="false" />
     <file path="$PROJECT_DIR$/../../gpcr-okb-gen/grails-app/conf/DataSource.groovy" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376580367764" ignored="false" />
     <file path="/DataSource.groovy" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376574288827" ignored="false" />
-    <file path="/nyosh-log4j.properties" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376660675045" ignored="false" />
+    <file path="/nyosh-log4j.properties" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376682706060" ignored="false" />
+    <file path="$PROJECT_DIR$/../gobyweb/grails-app/services/org/campagnelab/gobyweb/services/GobyWebLifecycleService.groovy" changelist="f6906b0e-f281-49a6-a4f8-112b500183fd" time="1376678599190" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +95,9 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/NYoSh-runtime-support$GobyWebParserTest.coverage" NAME="GobyWebParserTest Coverage Results" MODIFIED="1376681802262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.campagnelab.nyosh.environment.parsers.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/GStringPatternMatcher$CommandAssemblerTest_testPipeStdErrCommand.coverage" NAME="CommandAssemblerTest.testPipeStdErrCommand Coverage Results" MODIFIED="1371505625089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>org.campagnelab.nyosh.exec.*</FILTER>
     </SUITE>
@@ -145,7 +146,23 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/logging/Log4JInitializer.java" line="32" class="org.campagnelab.nyosh.logging.Log4JInitializer" package="org.campagnelab.nyosh.logging">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -167,20 +184,12 @@
       <file leaf-file-name="GobyWebParser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.056818184">
+            <state line="30" column="55" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.25677603">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#651#667#0" expanded="true" />
+                <element signature="e#693#709#0" expanded="true" />
+                <element signature="e#2636#2652#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nyosh-log4j.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/nyosh-log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="47" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -206,16 +215,16 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="35" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+            <state line="18" column="104" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Log4JInitializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Log4JInitializer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/logging/Log4JInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="79" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
+            <state line="44" column="0" selection-start="1846" selection-end="1846" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -250,8 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test-data/auto-options.sh" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/ExecutionEnvironment.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandAssembler.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/SequentialStepExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java" />
@@ -261,10 +268,12 @@
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/ScriptVariable.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Log4JInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/nyosh-log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/logging/nyosh-log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/logging/Log4JInitializer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java" />
       </list>
     </option>
@@ -284,7 +293,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="pattern-matcher" />
+          <option name="myItemId" value="nyosh-runtime-support" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -294,7 +303,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="pattern-matcher" />
+          <option name="myItemId" value="nyosh-runtime-support" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -514,7 +523,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logging" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -600,23 +613,25 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.campagnelab.nyosh.environment.parsers" />
       <recent name="org.campagnelab.nyosh.exec" />
       <recent name="org.campagnelab.nyosh.gstring.patterns" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.campagnelab.nyosh.exec" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/gstring/patterns" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.campagnelab.nyosh.logging" />
       <recent name="org.campagnelab.nyosh.environment" />
       <recent name="org.campagnelab.nyosh.exec.environment" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/logging/" />
+      <recent name="$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/gstring/patterns" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.GobyWebParserTest">
@@ -704,12 +719,14 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -922,7 +939,11 @@
       <created>1376407044438</created>
       <updated>1376407044438</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Introduce a dedicate logger for Nyosh runtime. Activities are logged in the JOB_DIR when available, otherwise in the HOME dir.">
+      <created>1376661062128</created>
+      <updated>1376661062128</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -947,14 +968,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="22" width="2560" height="1330" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.671371" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39752066" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39752066" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -962,14 +983,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13206047" sideWeight="0.17520662" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940334" sideWeight="0.6707921" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13206047" sideWeight="0.677686" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13206047" sideWeight="0.60247934" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2096261" sideWeight="0.677686" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32231405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34044823" sideWeight="0.2358871" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2096261" sideWeight="0.60247934" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34958678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1021,7 +1042,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add plugins root to test-data for testing integration with plugins-SDK." />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduce a dedicate logger for Nyosh runtime. Activities are logged in the JOB_DIR when available, otherwise in the HOME dir." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1053,6 +1074,7 @@
     <MESSAGE value="Add dependency against the plugins-SDK." />
     <MESSAGE value="Merge no-sdk branch into master." />
     <MESSAGE value="Add plugins root to test-data for testing integration with plugins-SDK." />
+    <MESSAGE value="Introduce a dedicate logger for Nyosh runtime. Activities are logged in the JOB_DIR when available, otherwise in the HOME dir." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1066,11 +1088,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/exec/CommandExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="117" selection-start="4178" selection-end="4178" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/plugins/2.3-SNAPSHOT/plugins-2.3-20130730.132802-13-sdk.jar!/org/campagnelab/gobyweb/clustergateway/submission/ClusterGatewaySimulator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.35502958" />
@@ -1137,29 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="35" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/Log4JInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="79" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/nyosh-log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="47" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/nyosh/environment/parsers/GobyWebParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="105" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
@@ -1167,12 +1161,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.056818184">
+        <state line="18" column="104" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/logging/Log4JInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1846" selection-end="1846" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#651#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/nyosh/environment/parsers/GobyWebParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="55" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.25677603">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#693#709#0" expanded="true" />
+            <element signature="e#2636#2652#0" expanded="true" />
           </folding>
         </state>
       </provider>
