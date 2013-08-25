@@ -49,7 +49,16 @@ public class GobyWebParser implements Parser {
         }
         String jobDir = System.getenv().get("JOB_DIR");
         //load constants.sh and auto-options.sh
+        new MapFileParser().parseAtRunTime(jobDir + "/constants.sh");
+        new MapFileParser().parseAtRunTime(jobDir + "/auto-options.sh");
 
+        //load exports.sh
+        if (! System.getenv().containsKey("TMPDIR")){
+            System.out.println("TMPDIR is not defined in the current environment");
+            return;
+        }
+        new MapFileParser().parseAtRunTime(System.getenv().get("TMPDIR")
+                    + "/exports.sh");
     }
 
     /**
