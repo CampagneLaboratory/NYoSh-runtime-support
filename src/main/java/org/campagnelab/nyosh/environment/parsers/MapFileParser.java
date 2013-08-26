@@ -1,6 +1,8 @@
 package org.campagnelab.nyosh.environment.parsers;
 
+import org.apache.log4j.Logger;
 import org.campagnelab.nyosh.environment.NYoShRuntimeEnvironment;
+import org.campagnelab.nyosh.logging.Log4JInitializer;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -15,6 +17,12 @@ import java.util.TreeSet;
  */
 public class MapFileParser implements Parser {
 
+    protected static Logger logger;
+
+    static {
+        Log4JInitializer.init();
+        logger = Logger.getLogger(MapFileParser.class);
+    }
     /**
      * Parses the file and populates the {@link NYoShRuntimeEnvironment}
      *
@@ -22,6 +30,7 @@ public class MapFileParser implements Parser {
      */
     @Override
     public void parseAtRunTime(String ... file) {
+        logger.debug("Loading " + file[0]);
         NYoShRuntimeEnvironment environment = NYoShRuntimeEnvironment.getEnvironment();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file[0]));
@@ -35,8 +44,7 @@ public class MapFileParser implements Parser {
             }
             reader.close();
         } catch (Exception e) {
-            System.err.println("Invalid source");
-            e.printStackTrace();
+            logger.error("Invalid source",e);
         }
     }
 
@@ -60,8 +68,7 @@ public class MapFileParser implements Parser {
             }
             reader.close();
         } catch (Exception e) {
-            System.err.println("Invalid source");
-            e.printStackTrace();
+            logger.error("Invalid source",e);
         }
         return returnedVariables;
 

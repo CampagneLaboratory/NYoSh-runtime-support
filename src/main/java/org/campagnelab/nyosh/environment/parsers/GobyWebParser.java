@@ -38,13 +38,14 @@ public class GobyWebParser implements Parser {
      */
     @Override
     public void parseAtRunTime(String ... source)  {
+        logger.info("Loading GobyWeb runtime environment");
        //the designTimeDefaults already exist in the process environment (at least JOB_DIR), here we just populate the nyosh env
        //with them to avoid to rely on a previous loaded JVM Source
         NYoShRuntimeEnvironment environment = NYoShRuntimeEnvironment.getEnvironment();
         for (Map.Entry<String,String> variable : designTimeDefaults.entrySet())
             environment.addVariable(variable.getKey(), System.getenv().get(variable.getKey()));
         if (! System.getenv().containsKey("JOB_DIR")){
-            System.out.println("JOB_DIR is not defined in the current environment");
+            logger.error("JOB_DIR is not defined in the current environment");
             return;
         }
         String jobDir = System.getenv().get("JOB_DIR");
@@ -54,11 +55,12 @@ public class GobyWebParser implements Parser {
 
         //load exports.sh
         if (! System.getenv().containsKey("TMPDIR")){
-            System.out.println("TMPDIR is not defined in the current environment");
+            logger.error("TMPDIR is not defined in the current environment");
             return;
         }
         new MapFileParser().parseAtRunTime(System.getenv().get("TMPDIR")
                     + "/exports.sh");
+        logger.info("GobyWeb runtime environment successfully loaded");
     }
 
     /**
@@ -126,18 +128,6 @@ public class GobyWebParser implements Parser {
             pw.flush();
             pw.close();
         }catch (Exception e) {e.printStackTrace();}
-    }
-
-    private static void appendLogToFile(Exception e)  {
-        try {
-            File file = new File(System.getProperty("user.home") + "/nyosh.log");
-            if (!file.exists())
-                file.createNewFile();
-            FileWriter writer = new FileWriter(file);
-            PrintWriter pw = new PrintWriter(writer);
-            e.printStackTrace(pw);
-            pw.close();
-        }catch (Exception e2) {e2.printStackTrace();}
     }
 
 }

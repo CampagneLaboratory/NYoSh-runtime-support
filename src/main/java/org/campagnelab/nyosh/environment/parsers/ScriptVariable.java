@@ -8,7 +8,7 @@ import org.campagnelab.gobyweb.clustergateway.jobs.simulator.Option;
 public class ScriptVariable implements Comparable<ScriptVariable> {
 
     public static enum Kind {
-        FILE, DIRECTORY, NUMBER, STRING
+        FILE, DIRECTORY, NUMERIC, BOOLEAN, STRING
     }
 
     public final String name;
